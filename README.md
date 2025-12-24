@@ -1,5 +1,5 @@
 # BridgeLabz-Training
-# 📘 Capgemini Analyst Trainee – .NET Training Journal
+# 📘 Analyst Trainee – .NET Training Journal
 
 ## 👤 Trainee Profile
 
@@ -7,7 +7,6 @@
 |------|--------|
 | **Name** | Loveesh Gulati |
 | **Role** | Analyst Trainee |
-| **Organization** | Capgemini |
 | **Technology Track** | .NET / C# |
 | **Training Start Date** | 16 December 2025 |
 
@@ -15,7 +14,7 @@
 
 ## 🧭 Repository Overview
 
-This repository documents my **day-to-day learning progress** as an **Analyst Trainee at Capgemini**, with a focus on **.NET and C# development**.  
+This repository documents my **day-to-day learning progress** as an **Analyst Trainee**, with a focus on **.NET and C# development**.  
 The training log is maintained **week-wise** for clarity and structured tracking.
 
 ---
