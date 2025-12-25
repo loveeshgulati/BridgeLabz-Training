@@ -33,7 +33,7 @@ The training log is maintained **week-wise** for clarity and structured tracking
 | **17-12-2025** | Git & Java | GitHub basics, Java basic problems | GitHub repo created, Java practice |
 | **18-12-2025** | C# / .NET | C# allocation, setup, Java → C# conversion | C# programs pushed to GitHub |
 | **19-12-2025** |C# |  **C# Operators & Data Types**<br>• Arithmetic, Relational & Logical Operators<br>• Built-in Data Types (int, float, double, char, string, bool)<br>• Basics of Memory Management in C#<br>• CLR Architecture (Overview)  | • Implemented C# programs demonstrating all operators<br>• Wrote basic programs using different data types<br>• Solved programs involving calculations, conditions, and datatype usage<br>• Completed today’s assignment and the previously assigned pending assignment<br>• Gained a basic understanding of CLR execution flow and memory handling<br>• Pushed all completed programs and assignments to GitHub |
-| **20-12-2025** | — | _To be updated_ | — |
+| **20-12-2025** | Access Modifiers & Practice | Access Modifiers in C# (public, private, protected, internal)                   | Implemented access modifier examples, solved LeetCode problems, and pushed code to GitHub | 
 
 ---
 
@@ -54,7 +54,6 @@ The training log is maintained **week-wise** for clarity and structured tracking
 | Git & GitHub Basics | ✅ Completed |
 | Java Basics | ✅ Completed |
 | C# Basics | 🟡 In Progress |
-| .NET Fundamentals | 🟡 In Progress |
 
 ---
 
@@ -64,9 +63,10 @@ The training log is maintained **week-wise** for clarity and structured tracking
 
 | Date | Focus Area | Topics Covered | Hands-on / Outcome |
 |----|-----------|---------------|-------------------|
-| **23-12-2025** | — | _To be updated_ | — |
-| **24-12-2025** | — | _To be updated_ | — |
-| **25-12-2025** | — | _To be updated_ | — |
+| 22/12/2025 | Control Flow Concepts       | Control flow statements in C# (if-else, switch, loops)                          | Studied documentation thoroughly and solved practice questions based on control flows |
+| 23/12/2025 | Arrays in C#                | Arrays, indexing, iteration, basic array operations                             | Solved array-based problems and pushed solutions to GitHub                         |
+| 24/12/2025 | Methods in C#               | Method declaration, parameters, return types, method calls                      | Practiced and solved multiple method-based questions                                |
+| 25/12/2025 | Methods & Problem Solving   | Advanced practice on methods, README updates, LeetCode problem solving          | Solved method-related programs, updated README file, completed and pushed LeetCode problems |
 | **26-12-2025** | — | _To be updated_ | — |
 | **27-12-2025** | — | _To be updated_ | — |
 
