@@ -6,6 +6,7 @@ namespace BridgeLabz_Training.String.Extras
 {
     public class LexicographicalOrder
     {
+
         static int CompareStrings(string s1, string s2)
         {
             int minLength = s1.Length < s2.Length ? s1.Length : s2.Length;

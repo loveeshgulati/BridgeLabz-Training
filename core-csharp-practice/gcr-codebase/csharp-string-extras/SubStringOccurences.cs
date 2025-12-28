@@ -6,6 +6,7 @@ namespace BridgeLabz_Training.String.Extras
 {
     public class SubStringOccurences
     {
+
         static int CountOccurrences(string text, string sub)
         {
             int count = 0;

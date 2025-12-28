@@ -8,6 +8,7 @@ namespace BridgeLabz_Training.String.Extras
     {
         static string Toggle(string input)
         {
+
             string result = "";
 
             for (int i = 0; i < input.Length; i++)

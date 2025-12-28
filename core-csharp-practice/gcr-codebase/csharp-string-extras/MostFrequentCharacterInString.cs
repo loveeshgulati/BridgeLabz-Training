@@ -8,6 +8,7 @@ namespace BridgeLabz_Training.String.Extras
     {
         static char FindMostFrequent(string input)
         {
+
             int maxCount = 0;
             char mostFrequent = input[0];
 

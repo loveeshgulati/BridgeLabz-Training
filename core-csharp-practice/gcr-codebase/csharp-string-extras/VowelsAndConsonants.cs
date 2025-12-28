@@ -13,6 +13,7 @@ namespace BridgeLabz_Training.String.Extras
 
             input = input.ToLower(); // make comparison easy
 
+
             for (int i = 0; i < input.Length; i++)
             {
                 char ch = input[i];

@@ -12,6 +12,7 @@ namespace BridgeLabz_Training.String.Extras
 
             for (int i = 0; i < input.Length; i++)
             {
+
                 char currentChar = input[i];
 
                 // Check if character already exists in result

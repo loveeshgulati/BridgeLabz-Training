@@ -4,6 +4,7 @@ using System.Text;
 
 namespace BridgeLabz_Training.String.Extras
 {
+
     public class AnagramCheck
     {
         static bool AreAnagrams(string s1, string s2)
