@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BridgeLabz_Training.String_level_1
+namespace BridgeLabz_Training.String.level_1
 {
     public class IndexOutOfRange
     {
