@@ -67,8 +67,9 @@ The training log is maintained **week-wise** for clarity and structured tracking
 | 23/12/2025 | Arrays in C#                | Arrays, indexing, iteration, basic array operations                             | Solved array-based problems and pushed solutions to GitHub                         |
 | 24/12/2025 | Methods in C#               | Method declaration, parameters, return types, method calls                      | Practiced and solved multiple method-based questions                                |
 | 25/12/2025 | Methods & Problem Solving   | Advanced practice on methods, README updates, LeetCode problem solving          | Solved method-related programs, updated README file, completed and pushed LeetCode problems |
-| **26-12-2025** | — | _To be updated_ | — |
-| **27-12-2025** | — | _To be updated_ | — |
+| 26/12/2025 | Core String Handling | • String declaration and initialization<br>• String immutability<br>• Accessing characters using index<br>• String traversal using loops<br>• Length property and basic comparisons | • Solved Level-1 string problems<br>• Practiced manual string manipulation logic<br>• Completed LeetCode Easy string problems<br>• Code pushed to GitHub |
+| 27/12/2025 | String Extras (Advanced Handling) | • Manual string parsing techniques<br>• Character-by-character processing<br>• Custom logic for trimming, splitting, and formatting<br>• Handling edge cases (extra spaces, empty strings) | • Solved string extras problem set<br>• Implemented solutions without built-in methods<br>• Improved logical thinking for real-world string scenarios<br>• Updated GitHub repository |
+| 28/12/2025 | Built-in String Methods | • `Split()`, `Substring()`, `Replace()`<br>• `Contains()`, `IndexOf()`<br>• `ToUpper()`, `ToLower()`<br>• String comparison and case handling | • Solved problems using built-in string methods<br>• Refactored earlier manual solutions<br>• Practiced optimized string operations<br>• Changes committed to GitHub |
 
 ---
 
