@@ -74,7 +74,10 @@ The training log is maintained **week-wise** for clarity and structured tracking
 ---
 
 ### 📝 Week 2 – Key Learnings
-- _To be updated_
+- Strong understanding of **string fundamentals and immutability**
+- Ability to solve problems using both **manual logic** and **built-in methods**
+- Improved confidence in handling **real-world string edge cases**
+- Consistent GitHub commits with structured solutions
 
 ---
 
