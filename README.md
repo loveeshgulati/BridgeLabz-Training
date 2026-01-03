@@ -89,6 +89,41 @@ The training log is maintained **week-wise** for clarity and structured tracking
 | .NET Core Concepts | 🟡 In Progress |
 | Problem Solving | 🟡 Improving |
 
+## Week 3 (29 Dec 2025 – 03 Jan 2026)
+
+🗂️ **Daily Summary**
+
+| Date | Focus Area | Topics Covered | Hands-on / Outcome |
+|-----|-----------|---------------|-------------------|
+| **29/12/2025** | Scenario-Based Programming & OOP Basics | • Sentence Formatter logic<br>• Text analysis of paragraphs<br>• Temperature Analyzer program<br>• Student Test Score evaluation<br>• Introduction to Classes & Objects in OOP | • Built multiple scenario-based programs<br>• Practiced problem-solving using classes and objects<br>• Solved basic OOP questions and strengthened fundamentals |
+| **30/12/2025** | Constructors & Access Control | • Constructors in C#<br>• Instance vs Class variables<br>• Access Modifiers (public, private, protected, internal)<br>• OOP design basics | • Implemented **EduQuiz – Student Quiz Grader**<br>• Developed **Library Management System**<br>• Applied access control concepts in real scenarios |
+| **31/12/2025** | Keywords & Utility Design | • `this` keyword<br>• `static` and `sealed` keywords<br>• `is` operator<br>• Utility class design patterns | • Created **Bank Account Manager** program<br>• Built **Utility Class for Mathematical Operations**<br>• Developed **Invoice Generator for Freelancers** |
+| **01/01/2026** | Object-Oriented Design Principles | • OOP design principles (encapsulation, abstraction)<br>• Object modeling concepts<br>• Class diagram basics | • Designed object models for real scenarios<br>• Implemented **Cafeteria Menu App** using arrays and methods |
+| **02/01/2026** | Inheritance & Review | • Inheritance concepts in C#<br>• Code review and feedback process | • Reviewed progress with trainer<br>• Solved **Bus Route Distance Tracker** scenario<br>• Implemented **Festival Lucky Draw** program |
+| **03/01/2026** | Consolidation & Practice | • Revision of all concepts covered in Week 3<br>• Mixed problem-solving (OOP + logic) | • Solved multiple revision-based problems<br>• Pushed weekly solutions to GitHub<br>• Completed and submitted LeetCode practice problems |
+
+---
+
+📝 **Week 3 – Key Learnings**
+
+- Clear understanding of **OOP fundamentals** including classes, objects, constructors, and inheritance  
+- Strong grasp of **access modifiers and keyword usage** in real-world scenarios  
+- Improved ability to design **scenario-based applications** using clean object-oriented logic  
+- Better confidence in **object modeling and program structure**  
+- Maintained consistent GitHub commits and LeetCode practice  
+
+---
+
+🎯 **Week 3 – Skill Progress**
+
+| Skill | Status |
+|-----|-------|
+| OOP Fundamentals (C#) | 🟢 Strong |
+| Object-Oriented Design | 🟡 Improving |
+| Scenario-Based Problem Solving | 🟢 Strong |
+| Code Structuring & Readability | 🟡 Improving |
+| GitHub & Version Control | 🟢 Consistent |
+
 ---
 
 ## 🛠️ Tools & Technologies
