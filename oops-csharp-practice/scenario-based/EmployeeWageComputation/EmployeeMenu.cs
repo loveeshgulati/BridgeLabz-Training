@@ -19,12 +19,14 @@ namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
                 int id = int.Parse(Console.ReadLine());
                 employeeService.AddEmployee(new Employee(id));
             }
+
             while (true)
             {
                 Console.WriteLine("\n--- Employee Wage Computation Menu ---");
                 Console.WriteLine("1. UC1 - Check Attendance");
-                Console.WriteLine("2. UC2 - Calculate Daily Wage");
-                Console.WriteLine("3. Exit");
+                Console.WriteLine("2. UC2 - Full-Time Wage");
+                Console.WriteLine("3. UC3 - Part-Time Wage");
+                Console.WriteLine("4. Exit");
                 Console.Write("Enter choice: ");
 
                 int choice = int.Parse(Console.ReadLine());
@@ -42,12 +44,12 @@ namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
                         break;
 
                     case 3:
-                        Console.WriteLine("Exiting Program...");
-                        return;
-
-                    default:
-                        Console.WriteLine("Invalid Choice");
+                        employeeService.CalculatePartTimeWage();
+                        employeeService.DisplayEmployees();
                         break;
+
+                    case 4:
+                        return;
                 }
             }
         }
