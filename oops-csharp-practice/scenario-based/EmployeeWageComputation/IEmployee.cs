@@ -4,11 +4,12 @@ using System.Text;
 
 namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
 {
-    public interface IEmployee
+    interface IEmployee
     {
-        void LoadPredefinedEmployees();
         void AddEmployee(Employee employee);
-        void CheckAttendance();
+        void CheckAttendance();// UC1
+        void CalculateDailyWage();// UC2
         void DisplayEmployees();
     }
+
 }

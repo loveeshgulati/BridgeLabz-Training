@@ -8,15 +8,10 @@ namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
     {
         private Employee[] employees = new Employee[15];
         private int count = 0;
-        private Random randomAttendance = new Random();
+        private Random random = new Random();
 
-        public void LoadPredefinedEmployees()
-        {
-            for (int i = 0; i < 10; i++)
-            {
-                employees[count++] = new Employee(100 + i);
-            }
-        }
+        private const int WAGE_PER_HOUR = 20;
+        private const int FULL_DAY_HOURS = 8;
 
         public void AddEmployee(Employee employee)
         {
@@ -26,16 +21,32 @@ namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
             }
             else
             {
-                Console.WriteLine("No more employees can be added.");
+                Console.WriteLine("Employee array is full.");
             }
         }
 
-        // UC1: Attendance using RANDOM
+        // UC1
         public void CheckAttendance()
         {
             for (int i = 0; i < count; i++)
             {
-                employees[i].IsPresent = randomAttendance.Next(0, 2) == 1;
+                employees[i].IsPresent = random.Next(0, 2) == 1;
+            }
+        }
+
+        // UC2
+        public void CalculateDailyWage()
+        {
+            for (int i = 0; i < count; i++)
+            {
+                if (employees[i].IsPresent)
+                {
+                    employees[i].DailyWage = WAGE_PER_HOUR * FULL_DAY_HOURS;
+                }
+                else
+                {
+                    employees[i].DailyWage = 0;
+                }
             }
         }
 

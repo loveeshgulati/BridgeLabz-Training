@@ -4,18 +4,27 @@ using System.Text;
 
 namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
 {
-    internal class EmployeeMenu
+    class EmployeeMenu
     {
         private IEmployee employeeService = new EmployeeUtilityImpl();
-        private bool isInitialized = false;
 
         public void ShowMenu()
         {
+            Console.Write("Enter number of employees (max 15): ");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write($"Enter Employee {i + 1} ID: ");
+                int id = int.Parse(Console.ReadLine());
+                employeeService.AddEmployee(new Employee(id));
+            }
             while (true)
             {
-                Console.WriteLine("\n Employee Wage Computation Menu");
-                Console.WriteLine("1. UC1 - Check Employee Attendance");
-                Console.WriteLine("2. Exit");
+                Console.WriteLine("\n--- Employee Wage Computation Menu ---");
+                Console.WriteLine("1. UC1 - Check Attendance");
+                Console.WriteLine("2. UC2 - Calculate Daily Wage");
+                Console.WriteLine("3. Exit");
                 Console.Write("Enter choice: ");
 
                 int choice = int.Parse(Console.ReadLine());
@@ -23,25 +32,17 @@ namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
                 switch (choice)
                 {
                     case 1:
-                        if (!isInitialized)
-                        {
-                            employeeService.LoadPredefinedEmployees();
-
-                            employeeService.AddEmployee(new Employee(110));
-                            employeeService.AddEmployee(new Employee(111));
-                            employeeService.AddEmployee(new Employee(112));
-                            employeeService.AddEmployee(new Employee(113));
-                            employeeService.AddEmployee(new Employee(114));
-
-                            isInitialized = true;
-                        }
-
                         employeeService.CheckAttendance();
                         employeeService.DisplayEmployees();
                         break;
 
                     case 2:
-                        Console.WriteLine("Exit Program");
+                        employeeService.CalculateDailyWage();
+                        employeeService.DisplayEmployees();
+                        break;
+
+                    case 3:
+                        Console.WriteLine("Exiting Program...");
                         return;
 
                     default:

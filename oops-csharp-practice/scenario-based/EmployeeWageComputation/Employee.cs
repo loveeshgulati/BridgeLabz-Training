@@ -4,10 +4,11 @@ using System.Text;
 
 namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
 {
-    public class Employee
+    class Employee
     {
         public int EmployeeId { get; private set; }
-        public bool IsPresent { get; set; }
+        public bool IsPresent { get; set; }//UC 1
+        public int DailyWage { get; set; }//UC2
 
         public Employee(int employeeId)
         {
@@ -16,9 +17,8 @@ namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
 
         public override string ToString()
         {
-            return IsPresent
-                ? $"Employee {EmployeeId} is Present"
-                : $"Employee {EmployeeId} is Absent";
+            return $"Employee {EmployeeId} | Present: {IsPresent} | Daily Wage: {DailyWage}";
         }
     }
+
 }
