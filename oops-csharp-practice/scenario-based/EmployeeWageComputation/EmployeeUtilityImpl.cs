@@ -9,11 +9,11 @@ namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
     {
         private Employee[] employees = new Employee[15];
         private int count = 0;
-        private Random random = new Random();
+        private Random employeeRandom = new Random();
 
         private const int WAGE_PER_HOUR = 20;
         private const int FULL_TIME_HOURS = 8;
-        private const int PART_TIME_HOURS = 8;   // as per UC3
+        private const int PART_TIME_HOURS = 8;
 
         public void AddEmployee(Employee employee)
         {
@@ -23,45 +23,31 @@ namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
             }
         }
 
-        // UC1 - Attendance
-        public void CheckAttendance()
+        // UC4: Switch Case Statement
+        public void CalculateDailyWageUsingSwitch()
         {
             for (int i = 0; i < count; i++)
             {
-                employees[i].IsPresent = random.Next(0, 2) == 1;
+                int empCheck = employeeRandom.Next(0, 3); // 0,1,2
 
-                if (employees[i].IsPresent)
+                switch (empCheck)
                 {
-                    // 0 = Full-Time, 1 = Part-Time
-                    employees[i].IsPartTime = random.Next(0, 2) == 1;
-                }
-            }
-        }
+                    case 0: // Absent
+                        employees[i].IsPresent = false;
+                        employees[i].DailyWage = 0;
+                        break;
 
-        // UC2 - Full-Time Wage
-        public void CalculateDailyWage()
-        {
-            for (int i = 0; i < count; i++)
-            {
-                if (employees[i].IsPresent && !employees[i].IsPartTime)
-                {
-                    employees[i].DailyWage = WAGE_PER_HOUR * FULL_TIME_HOURS;
-                }
-                else
-                {
-                    employees[i].DailyWage = 0;
-                }
-            }
-        }
+                    case 1: // Full-Time
+                        employees[i].IsPresent = true;
+                        employees[i].IsPartTime = false;
+                        employees[i].DailyWage = WAGE_PER_HOUR * FULL_TIME_HOURS;
+                        break;
 
-        // UC3 - Part-Time Wage
-        public void CalculatePartTimeWage()
-        {
-            for (int i = 0; i < count; i++)
-            {
-                if (employees[i].IsPresent && employees[i].IsPartTime)
-                {
-                    employees[i].DailyWage = WAGE_PER_HOUR * PART_TIME_HOURS;
+                    case 2: // Part-Time
+                        employees[i].IsPresent = true;
+                        employees[i].IsPartTime = true;
+                        employees[i].DailyWage = WAGE_PER_HOUR * PART_TIME_HOURS;
+                        break;
                 }
             }
         }

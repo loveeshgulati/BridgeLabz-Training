@@ -10,6 +10,7 @@ namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
 
         public void ShowMenu()
         {
+           
             Console.Write("Enter number of employees (max 15): ");
             int n = int.Parse(Console.ReadLine());
 
@@ -23,10 +24,8 @@ namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
             while (true)
             {
                 Console.WriteLine("\n--- Employee Wage Computation Menu ---");
-                Console.WriteLine("1. UC1 - Check Attendance");
-                Console.WriteLine("2. UC2 - Full-Time Wage");
-                Console.WriteLine("3. UC3 - Part-Time Wage");
-                Console.WriteLine("4. Exit");
+                Console.WriteLine("1. UC4 - Calculate Daily Wage using Switch Case");
+                Console.WriteLine("2. Exit");
                 Console.Write("Enter choice: ");
 
                 int choice = int.Parse(Console.ReadLine());
@@ -34,22 +33,16 @@ namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
                 switch (choice)
                 {
                     case 1:
-                        employeeService.CheckAttendance();
+                        employeeService.CalculateDailyWageUsingSwitch();
                         employeeService.DisplayEmployees();
                         break;
 
                     case 2:
-                        employeeService.CalculateDailyWage();
-                        employeeService.DisplayEmployees();
-                        break;
-
-                    case 3:
-                        employeeService.CalculatePartTimeWage();
-                        employeeService.DisplayEmployees();
-                        break;
-
-                    case 4:
                         return;
+
+                    default:
+                        Console.WriteLine("Invalid Choice");
+                        break;
                 }
             }
         }
