@@ -10,6 +10,7 @@ namespace BridgeLabz_Training.DataStructures.LinkedList
         public string Name;
         public int Age;
 
+
         public int[] FriendIds = new int[20]; 
         public int FriendCount = 0;
 
