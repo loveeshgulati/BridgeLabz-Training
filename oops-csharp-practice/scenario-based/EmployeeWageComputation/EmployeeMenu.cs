@@ -4,16 +4,15 @@ using System.Text;
 
 namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
 {
-    class EmployeeMenu
+    class EmployeeMenu:EmployeeUtilityImpl
     {
         private IEmployee employeeService = new EmployeeUtilityImpl();
-
         public void ShowMenu()
         {
             Console.Write("Enter number of employees (max 15): ");
-            int n = int.Parse(Console.ReadLine());
+            int numberOfEmployees = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < numberOfEmployees; i++)
             {
                 Console.Write($"Enter Employee {i + 1} ID: ");
                 int id = int.Parse(Console.ReadLine());
@@ -23,7 +22,7 @@ namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
             while (true)
             {
                 Console.WriteLine("\n--- Employee Wage Computation Menu ---");
-                Console.WriteLine("1. UC5 - Calculate Monthly Wage");
+                Console.WriteLine("1. UC6 - Calculate Monthly Wage with Condition");
                 Console.WriteLine("2. Exit");
                 Console.Write("Enter choice: ");
 
@@ -32,7 +31,7 @@ namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
                 switch (choice)
                 {
                     case 1:
-                        employeeService.CalculateMonthlyWage();
+                        employeeService.CalculateMonthlyWageWithCondition();
                         employeeService.DisplayEmployees();
                         break;
 

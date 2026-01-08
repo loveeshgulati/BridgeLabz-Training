@@ -5,7 +5,7 @@ using System.Text;
 namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
 {
 
-class EmployeeMain
+    class EmployeeMain
     {
         static void Main(string[] args)
         {

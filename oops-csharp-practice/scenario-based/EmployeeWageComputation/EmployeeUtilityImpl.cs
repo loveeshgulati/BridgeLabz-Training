@@ -10,10 +10,12 @@ namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
         private int count = 0;
         private Random employeeRandom = new Random();
 
-        private const int WAGE_PER_HOUR = 20;
-        private const int FULL_TIME_HOURS = 8;
-        private const int PART_TIME_HOURS = 8;
-        private const int WORKING_DAYS = 20;
+        private const int WagePerHour = 20;
+        private const int FullTimeHours = 8;
+        private const int PartTimeHours = 8;
+
+        private const int MaxWorkingDays = 20;
+        private const int MaxWorkingHours = 100;
 
         public void AddEmployee(Employee employee)
         {
@@ -23,38 +25,56 @@ namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
             }
         }
 
-        // UC5: Calculate Monthly Wage (using UC4 switch case logic)
-        public void CalculateMonthlyWage()
+        // UC6: Calculate wage till max hours OR max days is reached
+        public void CalculateMonthlyWageWithCondition()
         {
             for (int i = 0; i < count; i++)
             {
+                int totalDays = 0;
+                int totalHours = 0;
                 employees[i].MonthlyWage = 0;
+                employees[i].TotalWorkingHours = 0;
 
-                for (int day = 1; day <= WORKING_DAYS; day++)
+                while (totalDays < MaxWorkingDays && totalHours < MaxWorkingHours)
                 {
+                    totalDays++;
+                    int remainingHours = MaxWorkingHours - totalHours;
                     int employeeCheck = employeeRandom.Next(0, 3); // 0-Absent,1-FullTime,2-PartTime
 
                     switch (employeeCheck)
                     {
-                        case 0: // Absent UC1
+                        case 0: // Absent uc1
                             employees[i].IsPresent = false;
                             employees[i].DailyWage = 0;
                             break;
 
-                        case 1: // Full-Time UC 2
+                        case 1: // Full-Time uc2
                             employees[i].IsPresent = true;
                             employees[i].IsPartTime = false;
-                            employees[i].DailyWage = WAGE_PER_HOUR * FULL_TIME_HOURS;
+                            
+                            int fullTimeHoursWorked = Math.Min(FullTimeHours, remainingHours);
+                            totalHours += FullTimeHours;
+                            employees[i].TotalWorkingHours += fullTimeHoursWorked;
+                            employees[i].DailyWage = WagePerHour * FullTimeHours;
                             break;
 
-                        case 2: // Part-Time UC 3
+                        case 2: // Part-Time uc3
                             employees[i].IsPresent = true;
                             employees[i].IsPartTime = true;
-                            employees[i].DailyWage = WAGE_PER_HOUR * PART_TIME_HOURS;
+                            int partTimeHoursWorked = Math.Min(PartTimeHours, remainingHours);
+                            totalHours += PartTimeHours;
+                            employees[i].TotalWorkingHours += partTimeHoursWorked;
+                            employees[i].DailyWage = WagePerHour * PartTimeHours;
                             break;
                     }
 
                     employees[i].MonthlyWage += employees[i].DailyWage;
+
+                    // Stop if hours condition is met
+                    if (totalHours >= MaxWorkingHours)
+                    {
+                        break;
+                    }
                 }
             }
         }
@@ -67,5 +87,4 @@ namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
             }
         }
     }
-
 }
