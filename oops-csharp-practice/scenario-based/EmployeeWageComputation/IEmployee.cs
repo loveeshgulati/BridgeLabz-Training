@@ -7,8 +7,7 @@ namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
     interface IEmployee
     {
             void AddEmployee(Employee employee);
-            void CalculateDailyWageUsingSwitch(); // UC4
+            void CalculateMonthlyWage();   // UC5 (uses UC4 switch case)
             void DisplayEmployees();
         }
-
 }

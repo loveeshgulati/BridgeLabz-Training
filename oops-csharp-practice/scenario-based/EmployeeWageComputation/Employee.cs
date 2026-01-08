@@ -4,12 +4,15 @@ using System.Text;
 
 namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
 {
+    using System;
+
     class Employee
     {
         public int EmployeeId { get; private set; }
-        public bool IsPresent { get; set; }
-        public bool IsPartTime { get; set; }
-        public int DailyWage { get; set; }
+        public bool IsPresent { get; set; }// uc 1
+        public bool IsPartTime { get; set; }// uc 3
+        public int DailyWage { get; set; }// uc 2
+        public int MonthlyWage { get; set; }// uc 5
 
         public Employee(int employeeId)
         {
@@ -18,13 +21,10 @@ namespace BridgeLabz_Training.OOPS.EmployeeWageComputation
 
         public override string ToString()
         {
-            string type = IsPresent
-                ? (IsPartTime ? "Part-Time" : "Full-Time")
-                : "Absent";
-
-            return $"Employee {EmployeeId} | Status: {type} | Daily Wage: {DailyWage}";
+            string status = IsPresent
+                ? (IsPartTime ? "Part-Time" : "Full-Time"): "Absent";
+            return $"Employee {EmployeeId} | Status: {status} | Daily Wage: {DailyWage} | Monthly Wage: {MonthlyWage}";
         }
     }
-
 
 }
