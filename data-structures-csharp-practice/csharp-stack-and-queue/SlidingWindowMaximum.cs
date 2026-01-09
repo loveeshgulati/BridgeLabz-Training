@@ -44,7 +44,7 @@ namespace BridgeLabz_Training.DataStructures.StackAndQueue
             return windowMaximum;
         }
 
-        static void Main()
+        static void Main(string[] args)
         {
             int[] numbers = { 1, 3, -1, -3, 5, 3, 6, 7 };
             int windowSize = 3;
