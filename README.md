@@ -126,6 +126,42 @@ The training log is maintained **week-wise** for clarity and structured tracking
 
 ---
 
+## 📅 Week 4 (05 Jan 2026 – 10 Jan 2026)
+🗂️ Daily Summary  
+
+| Date       | Focus Area                                  | Topics Covered                                                                 | Hands-on / Outcome                                                                 |
+|-----------|--------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| 05/01/2026 | Encapsulation & Interfaces                 | • Encapsulation in C#  <br>• Interface concepts  <br>• Practice questions       | • Implemented **Hospital Patient Management System** (Scenario-based) <br>• Built **Vehicle Rental Application** (Scenario-based) <br>• Strengthened real-world modeling using interfaces and encapsulation |
+| 06/01/2026 | Abstract Classes & Polymorphism            | • Abstract classes  <br>• Polymorphism  <br>• Conceptual and coding questions   | • Implemented **Customer Service Call Log Manager** (Scenario-based) <br>• Built **Bird Sanctuary System** using Inheritance & Polymorphism <br>• Improved understanding of dynamic behavior in OOP |
+| 07/01/2026 | LinkedList & UC Versioning System          | • LinkedList concepts  <br>• Operations and use-cases  <br>• Practice problems  | • Applied LinkedList to **Employee Wage Computation Problem** using UC version system <br>• Enhanced data structure application in real scenarios |
+| 08/01/2026 | Stack, Queue & Hashing                     | • Stack & Queue concepts  <br>• HashMap  <br>• Hashing functions  <br>• Questions practice | • Implemented **Smart Home Automation System** (Scenario-based) <br>• Attended **Mentor Meeting** for guidance and performance review <br>• Improved data handling using collections |
+| 09/01/2026 | Sorting Algorithms & Scenario Design       | • Sorting algorithms concepts  <br>• Use-cases of sorting in applications       | • Built **Fitness Tracker System** (Scenario-based) <br>• Implemented **ATM Dispenser System** (Scenario-based) <br>• Applied sorting logic in practical problem solving |
+| 10/01/2026 |                                            |                                                                                 |                                                                                    |
+
+---
+
+## 📝 Week 4 – Key Learnings  
+
+- Strong understanding of **Encapsulation, Interfaces, Abstract Classes, and Polymorphism**  
+- Improved command over **Data Structures**: LinkedList, Stack, Queue, HashMap  
+- Enhanced ability to convert real-life problems into **scenario-based applications**  
+- Better design thinking for modular and reusable code  
+- Increased confidence in using **sorting algorithms** in practical systems  
+- Continuous improvement through mentor feedback  
+
+---
+
+## 🎯 Week 4 – Skill Progress  
+
+| Skill                              | Status        |
+|----------------------------------|--------------|
+| OOP Concepts (Advanced)          | 🟢 Strong     |
+| Interfaces & Abstraction         | 🟢 Strong     |
+| Inheritance & Polymorphism       | 🟢 Strong     |
+| Data Structures (C#)             | 🟡 Improving  |
+| Scenario-Based Problem Solving   | 🟢 Strong     |
+| Code Design & Architecture       | 🟡 Improving  |
+| GitHub & Version Control         | 🟢 Consistent |
 ## 🛠️ Tools & Technologies
 
 | Category | Tools |
