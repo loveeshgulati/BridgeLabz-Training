@@ -136,7 +136,6 @@ The training log is maintained **week-wise** for clarity and structured tracking
 | 07/01/2026 | LinkedList & UC Versioning System          | • LinkedList concepts  <br>• Operations and use-cases  <br>• Practice problems  | • Applied LinkedList to **Employee Wage Computation Problem** using UC version system <br>• Enhanced data structure application in real scenarios |
 | 08/01/2026 | Stack, Queue & Hashing                     | • Stack & Queue concepts  <br>• HashMap  <br>• Hashing functions  <br>• Questions practice | • Implemented **Smart Home Automation System** (Scenario-based) <br>• Attended **Mentor Meeting** for guidance and performance review <br>• Improved data handling using collections |
 | 09/01/2026 | Sorting Algorithms & Scenario Design       | • Sorting algorithms concepts  <br>• Use-cases of sorting in applications       | • Built **Fitness Tracker System** (Scenario-based) <br>• Implemented **ATM Dispenser System** (Scenario-based) <br>• Applied sorting logic in practical problem solving |
-| 10/01/2026 |                                            |                                                                                 |                                                                                    |
 
 ---
 
@@ -162,6 +161,18 @@ The training log is maintained **week-wise** for clarity and structured tracking
 | Scenario-Based Problem Solving   | 🟢 Strong     |
 | Code Design & Architecture       | 🟡 Improving  |
 | GitHub & Version Control         | 🟢 Consistent |
+
+## 📅 Week 5 (12 Jan 2026 – 14 Jan 2026)  
+🗂️ Daily Summary  
+
+| Date       | Focus Area                                   | Topics Covered                                                                 | Hands-on / Outcome                                                                 |
+|-----------|-----------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| 12/01/2026 | Searching Algorithms & StringBuilder          | • Linear Search  <br>• Binary Search  <br>• StringBuilder vs String  <br>• Performance concepts | • Solved problems on Linear & Binary Search <br>• Practiced StringBuilder for efficient string manipulation <br>• Implemented **Custom Furniture Manufacturing System** (Scenario-based) <br>• Built **Metal Factory Pipe Cutting System** (Scenario-based) <br>• Implemented **Loan Buddy – Loan Approval Automation** with 3 scenario-based questions |
+| 13/01/2026 | Algorithm Runtime Analysis & Big-O Notation   | • Time Complexity  <br>• Space Complexity  <br>• Best, Average & Worst cases  <br>• Practice questions | • Built **CinemaTime – Movie Scheduler Manager** <br>• Implemented **BookBuddy – Digital Bookshelf App** <br>• Solved 2 scenario-based questions focusing on real-world problem modeling |
+| 14/01/2026 | Evaluation, Review & Problem Solving          | • Theory-based evaluation (OOP + DSA)  <br>• LeetCode practice  <br>• Design thinking | • Gave structured review to mentor <br>• Implemented **Bank Account Manager System** <br>• Solved multiple LeetCode questions <br>• Started designing **Address Book Application** (initial structure & planning) |
+
+
+
 ## 🛠️ Tools & Technologies
 
 | Category | Tools |
