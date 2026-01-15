@@ -9,5 +9,6 @@ namespace BridgeLabz_Training.AddressBook
         void CreateContact();//UC 2
         void EditContact(string name);//UC 3
         void DeleteContact(string name);//UC 4
+        void DisplayAllContact();
     }
 }
