@@ -6,6 +6,7 @@ namespace BridgeLabz_Training.AddressBook
 {
     internal interface IAddressBook
     {
-        //will be implemented in later UC
+        void CreateContact();
+        void EditContact(string name);
     }
 }
