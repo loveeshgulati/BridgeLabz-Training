@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 
 namespace BridgeLabz_Training.AddressBook
 {
     internal class AddressBookImpl : IAddressBook
     {
-        private Contacts[] contactDetails = new Contacts[10];
+        private Contacts[] contactDetails = new Contacts[10];//UC 5 : Ability to add multiple person to Address Book
         private int count = 0;
         //UC 2 :Ability to add a new Contact to Address Book
         public void CreateContact()
