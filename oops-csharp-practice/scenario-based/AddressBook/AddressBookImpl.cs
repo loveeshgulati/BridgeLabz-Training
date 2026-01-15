@@ -7,6 +7,7 @@ namespace BridgeLabz_Training.AddressBook
     internal class AddressBookImpl:IAddressBook
     {
         private Contacts contactDetails = new Contacts();
+        bool isContactPresent = false;
         //UC 2 :Ability to add a new Contact to Address Book
         public void CreateContact()
         {
@@ -37,11 +38,13 @@ namespace BridgeLabz_Training.AddressBook
 
             Console.Write("Enter Email: ");
             contactDetails.Email = Console.ReadLine();
+            isContactPresent = true;
+            Console.WriteLine("Contact Created successfully");
         }
         // UC 3 : Ability to edit existing contact person using their name
         public void EditContact(string name)
         {
-            if (contactDetails.FirstName != null && contactDetails.FirstName.Equals(name))
+            if (isContactPresent && contactDetails.FirstName.Equals(name))
             {
                 Console.WriteLine("\nEditing Contact: " + name);
 
@@ -69,6 +72,18 @@ namespace BridgeLabz_Training.AddressBook
             else
             {
                 Console.WriteLine("Contact with given name not found.");
+            }
+        }
+        public void DeleteContact(string name)
+        {
+            if(isContactPresent && contactDetails.FirstName.Equals(name))
+            {
+                contactDetails = new Contacts();
+                Console.WriteLine("Contact deleted succesfully");
+            }
+            else
+            {
+                Console.WriteLine("Contact not found");
             }
         }
     }

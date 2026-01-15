@@ -11,9 +11,10 @@ namespace BridgeLabz_Training.AddressBook
         {
             while (true)
             {
-                Console.WriteLine("1. Create Contact");
-                Console.WriteLine("2. Edit Contact");
-                Console.WriteLine("3. Exit");
+                Console.WriteLine("1. Create Contact");//UC 2
+                Console.WriteLine("2. Edit Contact");//UC 3
+                Console.WriteLine("3. Delete Contact");//UC 4
+                Console.WriteLine("4. Exit");
                 Console.Write("Choose an option: ");
 
                 int choice = Convert.ToInt32(Console.ReadLine());
@@ -26,11 +27,17 @@ namespace BridgeLabz_Training.AddressBook
 
                     case 2:
                         Console.Write("Enter First Name to Edit: ");
-                        string name = Console.ReadLine();
-                        addressBook.EditContact(name);
+                        string editName = Console.ReadLine();
+                        addressBook.EditContact(editName);
+                        break;
+                    
+                    case 3:
+                        Console.Write("Enter First Name to Delete: ");
+                        string deleteName = Console.ReadLine();
+                        addressBook.DeleteContact(deleteName);
                         break;
 
-                    case 3:
+                    case 4:
                         return;
 
                     default:
