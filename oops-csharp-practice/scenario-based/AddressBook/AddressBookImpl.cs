@@ -16,6 +16,20 @@ namespace BridgeLabz_Training.AddressBook
         {
             AddressBookName = name;
         }
+        //UC 7 : Ability to ensure there is no Duplicate Entry of the same Person in a particular AddressBook
+        private bool IsDuplicate(string firstName, string lastName)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                if (contacts[i].FirstName.Equals(firstName) &&
+                    contacts[i].LastName.Equals(lastName))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         //UC 2 :Ability to add a new Contact to Address Book
         public void CreateContact()
         {
@@ -25,13 +39,24 @@ namespace BridgeLabz_Training.AddressBook
                 return;
             }
 
-            Contacts contact = new Contacts();
 
             Console.Write("First Name: ");
-            contact.FirstName = Console.ReadLine();
+            string firstName = Console.ReadLine();
 
             Console.Write("Last Name: ");
-            contact.LastName = Console.ReadLine();
+            string lastName = Console.ReadLine();
+
+            //Duplicate checked while creating new contact
+
+            if (IsDuplicate(firstName, lastName))
+            {
+                Console.WriteLine("Duplicate Entry, this person already exists");
+                return;
+            }
+
+            Contacts contact = new Contacts();
+            contact.FirstName = firstName;
+            contact.LastName = lastName;
 
             Console.Write("Address: ");
             contact.Address = Console.ReadLine();
