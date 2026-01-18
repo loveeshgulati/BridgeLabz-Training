@@ -21,7 +21,9 @@ namespace BridgeLabz_Training.AddressBook
                 Console.WriteLine("7.Search by State");
                 Console.WriteLine("8. View Persons By City");
                 Console.WriteLine("9. View Persons By State");
-                Console.WriteLine("10. Exit");
+                Console.WriteLine("10. Count by City");
+                Console.WriteLine("11. Count by State");
+                Console.WriteLine("12. Exit");
 
                 int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -80,6 +82,16 @@ namespace BridgeLabz_Training.AddressBook
                         break;
 
                     case 10:
+                        Console.Write("Enter City: ");
+                        system.CountByCity(Console.ReadLine());
+                        break;
+
+                    case 11:
+                        Console.Write("Enter State: ");
+                        system.CountByState(Console.ReadLine());
+                        break;
+
+                    case 12:
                         return;
                 }
             }

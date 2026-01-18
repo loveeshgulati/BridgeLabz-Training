@@ -91,6 +91,44 @@ namespace BridgeLabz_Training.AddressBook
                 }
             }
         }
+        public void CountByCity(string city)
+        {
+            int countPersons = 0;
+
+            for (int i = 0; i < count; i++)
+            {
+                Contacts[] contacts = books[i].GetContacts();
+                int total = books[i].GetCount();
+
+                for (int j = 0; j < total; j++)
+                {
+                    if (contacts[j].City.Equals(city))
+                        countPersons++;
+                }
+            }
+
+            Console.WriteLine($"Total persons in City '{city}' : {countPersons}");
+        }
+
+        // UC10 – Count persons by State
+        public void CountByState(string state)
+        {
+            int countPersons = 0;
+
+            for (int i = 0; i < count; i++)
+            {
+                Contacts[] contacts = books[i].GetContacts();
+                int total = books[i].GetCount();
+
+                for (int j = 0; j < total; j++)
+                {
+                    if (contacts[j].State.Equals(state))
+                        countPersons++;
+                }
+            }
+
+            Console.WriteLine($"Total persons in State '{state}' : {countPersons}");
+        }
     }
 }
 
