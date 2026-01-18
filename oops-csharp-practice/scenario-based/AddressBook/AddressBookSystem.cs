@@ -54,7 +54,43 @@ namespace BridgeLabz_Training.AddressBook
             for (int i = 0; i < count; i++)
                 books[i].SearchByState(state);
         }
+        // UC9 – View Persons by City
+        public void ViewPersonsByCity()
+        {
+            Console.WriteLine("\nPersons Grouped By City:");
 
+            for (int i = 0; i < count; i++)
+            {
+                AddressBookImpl book = books[i];
+                Contacts[] contacts = book.GetContacts();
+                int total = book.GetCount();
+
+                for (int j = 0; j < total; j++)
+                {
+                    Console.WriteLine($"City : {contacts[j].City}");
+                    contacts[j].DisplayContact();
+                }
+            }
+        }
+
+        // UC9 – View Persons by State
+        public void ViewPersonsByState()
+        {
+            Console.WriteLine("\nPersons Grouped By State:");
+
+            for (int i = 0; i < count; i++)
+            {
+                AddressBookImpl book = books[i];
+                Contacts[] contacts = book.GetContacts();
+                int total = book.GetCount();
+
+                for (int j = 0; j < total; j++)
+                {
+                    Console.WriteLine($"State : {contacts[j].State}");
+                    contacts[j].DisplayContact();
+                }
+            }
+        }
     }
 }
 

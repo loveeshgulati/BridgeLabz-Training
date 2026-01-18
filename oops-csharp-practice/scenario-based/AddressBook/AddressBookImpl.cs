@@ -152,6 +152,15 @@ namespace BridgeLabz_Training.AddressBook
                 if (contacts[i].State.Equals(state))
                     contacts[i].DisplayContact();
         }
+        public Contacts[] GetContacts()
+        {
+            return contacts;
+        }
+
+        public int GetCount()
+        {
+            return count;
+        }
 
     }
 }

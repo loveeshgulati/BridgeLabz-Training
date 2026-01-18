@@ -11,7 +11,8 @@ namespace BridgeLabz_Training.AddressBook
         void DisplayAllAddressBooks();
         void SearchPersonByCity(string city);
         void SearchPersonByState(string state);
-
+        void ViewPersonsByCity();
+        void ViewPersonsByState();
 
     }
 }
