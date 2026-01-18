@@ -161,6 +161,28 @@ namespace BridgeLabz_Training.AddressBook
         {
             return count;
         }
+        public void SortByName()
+        {
+            for (int i = 0; i < count - 1; i++)
+            {
+                for (int j = i + 1; j < count; j++)
+                {
+                    // Compare First Name
+                    if (string.Compare(contacts[i].FirstName, contacts[j].FirstName) > 0 ||
+                       (contacts[i].FirstName.Equals(contacts[j].FirstName) &&
+                        string.Compare(contacts[i].LastName, contacts[j].LastName) > 0))
+                    {
+                        // Swap
+                        Contacts temp = contacts[i];
+                        contacts[i] = contacts[j];
+                        contacts[j] = temp;
+                    }
+                }
+            }
+
+            Console.WriteLine("\nContacts sorted alphabetically by Name.");
+            DisplayAllContact();
+        }
 
     }
 }

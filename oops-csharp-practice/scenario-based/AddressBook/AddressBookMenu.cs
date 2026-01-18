@@ -23,7 +23,9 @@ namespace BridgeLabz_Training.AddressBook
                 Console.WriteLine("9. View Persons By State");
                 Console.WriteLine("10. Count by City");
                 Console.WriteLine("11. Count by State");
-                Console.WriteLine("12. Exit");
+                Console.WriteLine("12. Sort Contacts by Name");
+                Console.WriteLine("13. Exit");
+
 
                 int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -92,6 +94,14 @@ namespace BridgeLabz_Training.AddressBook
                         break;
 
                     case 12:
+                        Console.Write("Enter Address Book Name: ");
+                        var sortBook = system.GetAddressBook(Console.ReadLine());
+                        if (sortBook != null)
+                            sortBook.SortByName();
+                        else
+                            Console.WriteLine("Address Book not found!");
+                        break;
+                    case 13:
                         return;
                 }
             }
