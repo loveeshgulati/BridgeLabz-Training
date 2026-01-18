@@ -9,36 +9,34 @@ namespace BridgeLabz_Training.AddressBook
     class AddressBookImpl : IAddressBook
     {
         public string AddressBookName;
-        private Contacts[] contacts = new Contacts[10];//UC 5 : Ability to add multiple person to Address Book
+        private Contacts[] contacts = new Contacts[10];
         private int count = 0;
 
         public AddressBookImpl(string name)
         {
             AddressBookName = name;
         }
-        //UC 7 : Ability to ensure there is no Duplicate Entry of the same Person in a particular AddressBook
+
+        
         private bool IsDuplicate(string firstName, string lastName)
         {
             for (int i = 0; i < count; i++)
             {
                 if (contacts[i].FirstName.Equals(firstName) &&
                     contacts[i].LastName.Equals(lastName))
-                {
                     return true;
-                }
             }
             return false;
         }
 
-        //UC 2 :Ability to add a new Contact to Address Book
+       
         public void CreateContact()
         {
             if (count >= contacts.Length)
             {
-                Console.WriteLine("Address Book is full!");
+                Console.WriteLine("Address Book is Full!");
                 return;
             }
-
 
             Console.Write("First Name: ");
             string firstName = Console.ReadLine();
@@ -46,11 +44,9 @@ namespace BridgeLabz_Training.AddressBook
             Console.Write("Last Name: ");
             string lastName = Console.ReadLine();
 
-            //Duplicate checked while creating new contact
-
             if (IsDuplicate(firstName, lastName))
             {
-                Console.WriteLine("Duplicate Entry, this person already exists");
+                Console.WriteLine("Duplicate Entry Found!");
                 return;
             }
 
@@ -67,7 +63,7 @@ namespace BridgeLabz_Training.AddressBook
             Console.Write("State: ");
             contact.State = Console.ReadLine();
 
-            Console.Write("Zip: ");
+            Console.Write("ZIP: ");
             contact.ZIP = Console.ReadLine();
 
             Console.Write("Phone: ");
@@ -77,17 +73,16 @@ namespace BridgeLabz_Training.AddressBook
             contact.Email = Console.ReadLine();
 
             contacts[count++] = contact;
-            Console.WriteLine("Contact added successfully!");
+            Console.WriteLine("Contact Added Successfully!");
         }
-        // UC 3 : Ability to edit existing contact person using their name
+
+        
         public void EditContact(string name)
         {
             for (int i = 0; i < count; i++)
             {
                 if (contacts[i].FirstName.Equals(name))
                 {
-                    Console.WriteLine("Editing contact: " + name);
-
                     Console.Write("New Address: ");
                     contacts[i].Address = Console.ReadLine();
 
@@ -97,7 +92,7 @@ namespace BridgeLabz_Training.AddressBook
                     Console.Write("New State: ");
                     contacts[i].State = Console.ReadLine();
 
-                    Console.Write("New Zip: ");
+                    Console.Write("New ZIP: ");
                     contacts[i].ZIP = Console.ReadLine();
 
                     Console.Write("New Phone: ");
@@ -106,13 +101,14 @@ namespace BridgeLabz_Training.AddressBook
                     Console.Write("New Email: ");
                     contacts[i].Email = Console.ReadLine();
 
-                    Console.WriteLine("Contact updated!");
+                    Console.WriteLine("Contact Updated!");
                     return;
                 }
             }
-            Console.WriteLine("Contact not found.");
+            Console.WriteLine("Contact Not Found.");
         }
-        // UC 4 : Ability to delete a person using person's name 
+
+       
         public void DeleteContact(string name)
         {
             for (int i = 0; i < count; i++)
@@ -122,30 +118,42 @@ namespace BridgeLabz_Training.AddressBook
                     for (int j = i; j < count - 1; j++)
                         contacts[j] = contacts[j + 1];
 
-                    contacts[count - 1] = null;
-                    count--;
-
-                    Console.WriteLine("Contact deleted successfully!");
+                    contacts[--count] = null;
+                    Console.WriteLine("Contact Deleted!");
                     return;
                 }
             }
-            Console.WriteLine("Contact not found.");
+            Console.WriteLine("Contact Not Found.");
         }
 
         public void DisplayAllContact()
         {
             if (count == 0)
             {
-                Console.WriteLine("No contacts in this Address Book.");
+                Console.WriteLine("No Contacts Available.");
                 return;
             }
 
-            Console.WriteLine("\nContacts in Address Book : " + AddressBookName);
             for (int i = 0; i < count; i++)
                 contacts[i].DisplayContact();
         }
-    }
 
+        
+        public void SearchByCity(string city)
+        {
+            for (int i = 0; i < count; i++)
+                if (contacts[i].City.Equals(city))
+                    contacts[i].DisplayContact();
+        }
+
+        public void SearchByState(string state)
+        {
+            for (int i = 0; i < count; i++)
+                if (contacts[i].State.Equals(state))
+                    contacts[i].DisplayContact();
+        }
+
+    }
 }
 
 

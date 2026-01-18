@@ -6,9 +6,11 @@ namespace BridgeLabz_Training.AddressBook
 {
     internal interface IAddressBook
     {
-        void CreateContact();//UC 2
-        void EditContact(string name);//UC 3
-        void DeleteContact(string name);//UC 4
+        void CreateContact();
+        void EditContact(string name);
+        void DeleteContact(string name);
         void DisplayAllContact();
+        void SearchByCity(string city);
+        void SearchByState(string state);
     }
 }

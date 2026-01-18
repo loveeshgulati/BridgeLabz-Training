@@ -6,20 +6,20 @@ namespace BridgeLabz_Training.AddressBook
 {
     class AddressBookMenu
     {
-        AddressBookSystem system = new AddressBookSystem();
+        IAddressBookSystem system = new AddressBookSystem();
 
         public void ShowMenu()
         {
             while (true)
             {
-                Console.WriteLine("\n1. Create Address Book");
-                Console.WriteLine("2. Add Contact to Address Book");
-                Console.WriteLine("3. Edit Contact");
-                Console.WriteLine("4. Delete Contact");
-                Console.WriteLine("5. Display Contacts of Address Book");
-                Console.WriteLine("6. Display All Address Books");
-                Console.WriteLine("7. Exit");
-                Console.Write("Choose option: ");
+                Console.WriteLine("\n1.Create Address Book");
+                Console.WriteLine("2.Add Contact");
+                Console.WriteLine("3.Edit Contact");
+                Console.WriteLine("4.Delete Contact");
+                Console.WriteLine("5.Display Contacts");
+                Console.WriteLine("6.Search by City");
+                Console.WriteLine("7.Search by State");
+                Console.WriteLine("8.Exit");
 
                 int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -30,46 +30,46 @@ namespace BridgeLabz_Training.AddressBook
                         break;
 
                     case 2:
-                        Console.Write("Enter Address Book name: ");
-                        AddressBookImpl addBook = system.GetAddressBook(Console.ReadLine());
-                        if (addBook != null) addBook.CreateContact();
-                        else Console.WriteLine("Address Book not found");
+                        Console.Write("Enter Address Book Name: ");
+                        system.GetAddressBook(Console.ReadLine())?.CreateContact();
                         break;
 
                     case 3:
-                        Console.Write("Enter Address Book name: ");
-                        AddressBookImpl editBook = system.GetAddressBook(Console.ReadLine());
+                        Console.Write("Enter Address Book Name: ");
+                        var editBook = system.GetAddressBook(Console.ReadLine());
                         if (editBook != null)
                         {
-                            Console.Write("Enter First Name to edit: ");
+                            Console.Write("Enter First Name: ");
                             editBook.EditContact(Console.ReadLine());
                         }
-                        else Console.WriteLine("Address Book not found");
                         break;
 
                     case 4:
-                        Console.Write("Enter Address Book name: ");
-                        AddressBookImpl delBook = system.GetAddressBook(Console.ReadLine());
+                        Console.Write("Enter Address Book Name: ");
+                        var delBook = system.GetAddressBook(Console.ReadLine());
                         if (delBook != null)
                         {
-                            Console.Write("Enter First Name to delete: ");
+                            Console.Write("Enter First Name: ");
                             delBook.DeleteContact(Console.ReadLine());
                         }
-                        else Console.WriteLine("Address Book not found");
                         break;
 
                     case 5:
-                        Console.Write("Enter Address Book name: ");
-                        AddressBookImpl viewBook = system.GetAddressBook(Console.ReadLine());
-                        if (viewBook != null) viewBook.DisplayAllContact();
-                        else Console.WriteLine("Address Book not found");
+                        Console.Write("Enter Address Book Name: ");
+                        system.GetAddressBook(Console.ReadLine())?.DisplayAllContact();
                         break;
 
                     case 6:
-                        system.DisplayAllAddressBooks();
+                        Console.Write("Enter City: ");
+                        system.SearchPersonByCity(Console.ReadLine());
                         break;
 
                     case 7:
+                        Console.Write("Enter State: ");
+                        system.SearchPersonByState(Console.ReadLine());
+                        break;
+
+                    case 8:
                         return;
                 }
             }

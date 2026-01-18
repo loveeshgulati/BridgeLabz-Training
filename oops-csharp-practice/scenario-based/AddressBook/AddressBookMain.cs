@@ -6,7 +6,7 @@ using System.Text;
 
 namespace BridgeLabz_Training.AddressBook
 {
-    
+
     internal class AddressBookMain
     {
         static void Main(string[] args)
