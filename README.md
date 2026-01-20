@@ -162,15 +162,44 @@ The training log is maintained **week-wise** for clarity and structured tracking
 | Code Design & Architecture       | 🟡 Improving  |
 | GitHub & Version Control         | 🟢 Consistent |
 
-## 📅 Week 5 (12 Jan 2026 – 14 Jan 2026)  
-🗂️ Daily Summary  
+## 📅 Week 5 – Learning Log
 
 | Date       | Focus Area                                   | Topics Covered                                                                 | Hands-on / Outcome                                                                 |
-|-----------|-----------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| 12/01/2026 | Searching Algorithms & StringBuilder          | • Linear Search  <br>• Binary Search  <br>• StringBuilder vs String  <br>• Performance concepts | • Solved problems on Linear & Binary Search <br>• Practiced StringBuilder for efficient string manipulation <br>• Implemented **Custom Furniture Manufacturing System** (Scenario-based) <br>• Built **Metal Factory Pipe Cutting System** (Scenario-based) <br>• Implemented **Loan Buddy – Loan Approval Automation** with 3 scenario-based questions |
-| 13/01/2026 | Algorithm Runtime Analysis & Big-O Notation   | • Time Complexity  <br>• Space Complexity  <br>• Best, Average & Worst cases  <br>• Practice questions | • Built **CinemaTime – Movie Scheduler Manager** <br>• Implemented **BookBuddy – Digital Bookshelf App** <br>• Solved 2 scenario-based questions focusing on real-world problem modeling |
-| 14/01/2026 | Evaluation, Review & Problem Solving          | • Theory-based evaluation (OOP + DSA)  <br>• LeetCode practice  <br>• Design thinking | • Gave structured review to mentor <br>• Implemented **Bank Account Manager System** <br>• Solved multiple LeetCode questions <br>• Started designing **Address Book Application** (initial structure & planning) |
+|-----------|-----------------------------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 12/01/2026 | Searching Algorithms & StringBuilder         | • Linear Search  <br>• Binary Search  <br>• StringBuilder vs String  <br>• Performance concepts | • Solved problems on Linear & Binary Search  <br>• Practiced StringBuilder for efficient string manipulation  <br>• Implemented **Custom Furniture Manufacturing System** (Scenario-based)  <br>• Built **Metal Factory Pipe Cutting System** (Scenario-based)  <br>• Implemented **Loan Buddy – Loan Approval Automation** with 3 scenario-based questions |
+| 13/01/2026 | Algorithm Runtime Analysis & Big-O Notation  | • Time Complexity  <br>• Space Complexity  <br>• Best, Average & Worst cases  <br>• Practice questions | • Built **CinemaTime – Movie Scheduler Manager**  <br>• Implemented **BookBuddy – Digital Bookshelf App**  <br>• Solved 2 scenario-based questions focusing on real-world problem modeling |
+| 14/01/2026 | Evaluation, Review & Problem Solving         | • Theory-based evaluation (OOP + DSA)  <br>• LeetCode practice  <br>• Design thinking | • Gave structured review to mentor  <br>• Implemented **Bank Account Manager System**  <br>• Solved multiple LeetCode questions  <br>• Started designing **Address Book Application** (initial structure & planning) |
+| 15/01/2026 | Scenario Design & Linked List Applications  | • Doubly Linked List  <br>• Stack  <br>• Scenario-based system modeling  <br>• Modular code design  <br>• Address Book system refinement | • Built **BrowserBuddy – Tab History Manager** using Doubly Linked List + Stack  <br>• Improved multiple versions of Address Book system  <br>• Gained clarity on browser-like navigation logic  <br>• Enhanced modular and reusable code structure |
+| 16/01/2026 | Circular Structures & Queue-Based Systems   | • Circular Linked List  <br>• Queue  <br>• Flow-based system design  <br>• Dynamic insertion & deletion using LinkedList | • Built **TrafficManager** using Circular Linked List + Queue  <br>• Implemented **BookShelf System** using LinkedList  <br>• Understood continuous flow systems like traffic management  <br>• Improved real-time data handling skills |
+| 17/01/2026 | Sorting Algorithms in Real Scenarios        | • Quick Sort  <br>• Bubble Sort  <br>• Algorithm selection based on performance  <br>• Ranking & ordering systems | • Built **FlashDealz – Product Sorting by Discount** using Quick Sort  <br>• Built **FitnessTracker – Daily Step Count Ranking** using Bubble Sort  <br>• Compared efficiency of sorting algorithms  <br>• Increased confidence in algorithm-based system design |
 
+---
+
+## 📝 Week 5 – Key Learnings
+- Strengthened understanding of **searching algorithms** and their performance impact.  
+- Developed clarity on **String vs StringBuilder** and when to use each for efficiency.  
+- Gained solid practical knowledge of **Time & Space Complexity (Big-O)**.  
+- Improved skills in converting **real-world systems into algorithm-driven applications**.  
+- Enhanced confidence in using **Linked Lists (Doubly & Circular)**, **Stack**, and **Queue**.  
+- Applied **sorting algorithms** in performance-critical and ranking-based systems.  
+- Better design thinking for **modular, reusable, and scalable code structures**.  
+- Continued refinement of the **Address Book Application** architecture.
+
+---
+
+## 🎯 Week 5 – Skill Progress
+
+| Skill                          | Status        |
+|-------------------------------|--------------|
+| Searching Algorithms          | 🟢 Strong    |
+| String Manipulation (C#)      | 🟢 Strong    |
+| Big-O & Complexity Analysis   | 🟡 Improving |
+| Linked List (All Types)       | 🟢 Strong    |
+| Stack & Queue                 | 🟢 Strong    |
+| Sorting Algorithms            | 🟡 Improving |
+| Scenario-Based Problem Solving| 🟢 Strong    |
+| Code Design & Architecture    | 🟡 Improving |
+| OOP + DSA Integration         | 🟢 Strong    |
 
 
 ## 🛠️ Tools & Technologies
