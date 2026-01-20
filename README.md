@@ -201,6 +201,30 @@ The training log is maintained **week-wise** for clarity and structured tracking
 | Code Design & Architecture    | 🟡 Improving |
 | OOP + DSA Integration         | 🟢 Strong    |
 
+## 📅 Week 6 – Learning Log (19–24 January 2026)
+
+| Date       | Focus Area                              | Topics Covered                                                                 | Hands-on / Outcome                                                                 |
+|-----------|------------------------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 19/01/2026 | Scenario-Based Systems & Generics       | • Singly Linked List  <br>• Stack  <br>• Custom HashMap  <br>• Functions for evaluation logic  <br>• Generics in C# (Basics)  <br>• Type safety & reusability | • Built **ParcelTracker – Delivery Chain Management** using Singly Linked List  <br>• Built **ExamProctor – Online Exam Review System** using Stack + Custom HashMap + Functions  <br>• Practiced Generics through multiple coding questions  <br>• Improved understanding of reusable and type-safe code |
+
+| 20/01/2026 |                                   |                                                                                |                                                                                   |
+| 21/01/2026 |                                   |                                                                                |                                                                                   |
+| 22/01/2026 |                                   |                                                                                |                                                                                   |
+| 23/01/2026 |                                   |                                                                                |                                                                                   |
+| 24/01/2026 |                                   |                                                                                |                                                                                   |
+
+---
+
+## 📝 Week 6 – Key Learnings (Template)
+-  
+-  
+-  
+-  
+-  
+-  
+
+---
+
 
 ## 🛠️ Tools & Technologies
 
