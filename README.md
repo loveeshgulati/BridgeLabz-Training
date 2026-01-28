@@ -244,6 +244,14 @@ The training log is maintained **week-wise** for clarity and structured tracking
   
 
 ---
+# 📅 Week 7 – Learning Log (26–27 January 2026)
+
+| Date       | Focus Area | Topics Covered | Hands-on / Outcome |
+|-----------|-----------|---------------|-------------------|
+| 26/01/2026 | Annotations & Reflection | • Attributes (Annotations) in C# <br> • Built-in attributes <br> • Custom attributes <br> • Reflection API <br> • Reading metadata at runtime <br> • Dynamic type inspection | • Implemented programs using **custom attributes** <br> • Used **Reflection** to read class, method, and property metadata <br> • Solved multiple problems to understand runtime behavior <br> • Gained clarity on how frameworks internally use reflection |
+| 27/01/2026 | SonarQube + Code Quality Improvements | • SonarQube setup attempt and analysis concepts <br> • Code quality rules <br> • Refactoring practices <br> • Collections implementation <br> • Generics usage <br> • Exception handling in real projects | • Tried implementing **SonarQube** on the project (partially completed, under progress) <br> • Refactored **Address Book Application** using: <br> &nbsp;&nbsp;– Collections <br> &nbsp;&nbsp;– Generics <br> &nbsp;&nbsp;– Proper Exception Handling <br> • Improved code structure and maintainability <br> • Understood importance of static code analysis tools |
+
+---
 
 
 ## 🛠️ Tools & Technologies
