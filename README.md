@@ -208,16 +208,40 @@ The training log is maintained **week-wise** for clarity and structured tracking
 | 19/01/2026 | Scenario-Based Systems & Generics       | • Singly Linked List  <br>• Stack  <br>• Custom HashMap  <br>• Functions for evaluation logic  <br>• Generics in C# (Basics)  <br>• Type safety & reusability | • Built **ParcelTracker – Delivery Chain Management** using Singly Linked List  <br>• Built **ExamProctor – Online Exam Review System** using Stack + Custom HashMap + Functions  <br>• Practiced Generics through multiple coding questions  <br>• Improved understanding of reusable and type-safe code |
 | 20/01/2026 | Collections, Linked List & Stack-Map Systems | • Singly Linked List  <br>• Stack  <br>• HashMap  <br>• Functions for modular logic  <br>• Collections Framework concepts  <br>• List, Stack, Queue, Dictionary usage  <br>• Problem solving using Collections | • Built **ParcelTracker – Delivery Chain Management** using Singly Linked List  <br>• Built **ExamProctor – Online Exam Review System** using Stack + HashMap + Functions  <br>• Solved multiple problems on Collections  <br>• Improved understanding of choosing the right collection for a given scenario  <br>• Strengthened modular coding using functions |
 | 21/01/2026 | Queue Systems, Sorting & Streams             | • Queue  <br>• HashMap  <br>• Merge Sort  <br>• Streams concepts  <br>• Data processing pipelines | • Built **SmartCheckout – Supermarket Billing Queue** using Queue + HashMap  <br>• Built **EduResults – Rank Sheet Generator** using Merge Sort  <br>• Practiced Streams for data filtering and processing  <br>• Understood real-time queue handling and ranking systems  <br>• Improved efficiency in handling large datasets |
+| 22/01/2026 | Collections Types & Exception Handling | • Generic Collections <br> • Non-Generic Collections <br> • Concurrent Collections <br> • Specialized Collections <br> • Exception hierarchy in C# <br> • try-catch-finally <br> • Custom Exceptions <br> • Circular Linked List | • Implemented **AmbulanceRoute – Emergency Patient Navigation System** using Circular Linked List <br> • Solved multiple problems on exception handling <br> • Practiced handling invalid inputs and runtime errors using custom exceptions <br> • Gained clear understanding of when to use different collection types (Generic, Non-Generic, Concurrent, Specialized) |
+| 23/01/2026 | Sorting, Regex & NUnit Testing | • Sorting concepts (Bubble, Selection, Merge – revision) <br> • Regular Expressions (Regex) <br> • Pattern matching & validation <br> • NUnit framework concepts <br> • Writing unit tests for validation logic | • Implemented sorting programs using functions <br> • Solved multiple Regex problems (Username, Email, License Plate, etc.) <br> • Created NUnit test cases for Regex validation methods <br> • Understood importance of automated testing for input validation |
+| 24/01/2026 | MSTest & NUnit Testing | • MSTest framework concepts <br> • NUnit vs MSTest comparison <br> • Writing test classes and test methods <br> • Exception testing in unit tests <br> • Regex testing using both frameworks | • Implemented the same test cases using both **MSTest** and **NUnit** <br> • Practiced testing exception scenarios <br> • Improved understanding of professional testing standards <br> • Gained confidence in writing maintainable and reusable test cases |
+---
+
+## 📝 Week 6 – Key Learnings
+
+- Developed strong clarity on **different types of Collections in C#** (Generic, Non-Generic, Concurrent, and Specialized) and their real-world usage.
+- Strengthened understanding of **Exception Handling** and its importance in building reliable and fault-tolerant applications.
+- Learned to design and implement **Custom Exceptions** for better error identification and debugging.
+- Understood the practical application of **Circular Linked Lists** through the *AmbulanceRoute – Emergency Patient Navigation* system.
+- Improved conceptual and practical knowledge of **Sorting Algorithms** and their role in data organization and ranking systems.
+- Gained solid hands-on experience with **Regular Expressions (Regex)** for input validation and pattern matching.
+- Built confidence in writing **automated unit tests** using both **NUnit** and **MSTest** frameworks.
+- Learned how professional projects use testing to ensure correctness, stability, and maintainability.
+- Improved ability to write **clean, modular, and testable code** using methods instead of logic inside `Main`.
 
 ---
 
-## 📝 Week 6 – Key Learnings (Template)
--  
--  
--  
--  
--  
--  
+## 🎯 Week 6 – Skill Progress
+
+| Skill | Status |
+|------|-------|
+| Collections Framework (All Types) | 🟢 Strong |
+| Exception Handling & Custom Exceptions | 🟢 Strong |
+| Circular Linked List | 🟢 Strong |
+| Sorting Algorithms | 🟡 Improving |
+| Regular Expressions (Regex) | 🟢 Strong |
+| NUnit Testing Framework | 🟢 Strong |
+| MSTest Framework | 🟢 Strong |
+| Unit Testing Practices | 🟢 Strong |
+| Code Modularity & Reusability | 🟢 Strong |
+| Industry-Level Code Quality | 🟡 Improving |
+  
 
 ---
 
