@@ -288,6 +288,13 @@ The training log is maintained **week-wise** for clarity and structured tracking
 | Industry-Level Coding Practices | 🟡 Improving |
 
 ---
+# 📅 Week 8 – Learning Log (2–4 February 2026)
+
+| Date | Focus Area | Topics Covered | Hands-on / Outcome |
+|-----|-----------|---------------|-------------------|
+| 02/02/2026 | Design Principles & Regex | • Software design principles <br> • KISS (Keep It Simple, Stupid) <br> • DRY (Don’t Repeat Yourself) <br> • DIY (Do It Yourself) <br> • Regex-based problem solving | • Understood importance of clean and maintainable design <br> • Applied KISS and DRY while structuring code <br> • Built **FlipKey** – scenario-based problem using Regex <br> • Practiced simplifying logic and avoiding duplication |
+| 03/02/2026 | Multithreading & Concept Revision | • Multithreading concepts <br> • Thread lifecycle basics <br> • Revision of Regex <br> • MSTest revision <br> • Annotations & Reflection revision | • Learned core multithreading concepts <br> • Revised previously learned Regex, MSTest, and Annotation–Reflection concepts <br> • Tried integrating revised concepts into the **Address Book** application |
+| 04/02/2026 | Multithreading Practice & DBMS Setup | • Multithreading problem solving <br> • Concurrency-related scenarios <br> • MS SQL Server setup basics <br> • Introduction to DBMS environment | • Solved problems involving multithreading <br> • Strengthened understanding of concurrent execution <br> • Started MS SQL Server setup for DBMS practice and upcoming database integration |
 
 
 ## 🛠️ Tools & Technologies
