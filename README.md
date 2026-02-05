@@ -244,12 +244,48 @@ The training log is maintained **week-wise** for clarity and structured tracking
   
 
 ---
-# 📅 Week 7 – Learning Log (26–27 January 2026)
+# 📅 Week 7 – Learning Log (26–31 January 2026)
 
-| Date       | Focus Area | Topics Covered | Hands-on / Outcome |
-|-----------|-----------|---------------|-------------------|
-| 26/01/2026 | Annotations & Reflection | • Attributes (Annotations) in C# <br> • Built-in attributes <br> • Custom attributes <br> • Reflection API <br> • Reading metadata at runtime <br> • Dynamic type inspection | • Implemented programs using **custom attributes** <br> • Used **Reflection** to read class, method, and property metadata <br> • Solved multiple problems to understand runtime behavior <br> • Gained clarity on how frameworks internally use reflection |
-| 27/01/2026 | SonarQube + Code Quality Improvements | • SonarQube setup attempt and analysis concepts <br> • Code quality rules <br> • Refactoring practices <br> • Collections implementation <br> • Generics usage <br> • Exception handling in real projects | • Tried implementing **SonarQube** on the project (partially completed, under progress) <br> • Refactored **Address Book Application** using: <br> &nbsp;&nbsp;– Collections <br> &nbsp;&nbsp;– Generics <br> &nbsp;&nbsp;– Proper Exception Handling <br> • Improved code structure and maintainability <br> • Understood importance of static code analysis tools |
+| Date | Focus Area | Topics Covered | Hands-on / Outcome |
+|-----|-----------|---------------|-------------------|
+| 26/01/2026 | Annotations & Reflection | • Attributes (Annotations) <br> • Built-in & Custom Attributes <br> • Reflection API <br> • Runtime metadata inspection | • Implemented custom annotations <br> • Used Reflection to inspect classes, methods, and properties <br> • Solved multiple problems to understand runtime behavior |
+| 27/01/2026 | SonarQube & Code Quality | • SonarQube setup & analysis concepts <br> • Code smells & quality rules <br> • Refactoring practices <br> • Collections <br> • Generics <br> • Exception Handling | • Tried implementing SonarQube (partially completed) <br> • Refactored Address Book application using Collections & Generics <br> • Improved Exception Handling across the project |
+| 28/01/2026 | CSV Handling & Exception-Centric Systems | • CSV file reading & writing <br> • CSV parsing <br> • Exception handling in file operations <br> • MSTest basics | • Solved multiple problems on CSV data handling <br> • Built **AeroVigil** – Airline Management System (exception-focused) <br> • Implemented **Bank Account** scenario with MSTest-based test cases |
+| 29/01/2026 | JSON, Regex & Mentorship | • JSON concepts <br> • Reading & writing JSON files <br> • Parsing JSON data <br> • Regex revision & advanced patterns | • Implemented JSON read/write utilities <br> • Built **LexicalTwit** – Twitter-like text validation system using Regex <br> • Mentorship meeting for guidance and progress review |
+| 30/01/2026 | JSON Practice & Concept Revision | • JSON problem-solving <br> • Data parsing <br> • Revision of Collections, Exceptions, Regex | • Solved multiple JSON-based problems <br> • Revised previously learned concepts for better retention |
+| 31/01/2026 | Address Book – Feature Completion | • Address Book use cases (UCs) <br> • Applying learned concepts | • Implemented additional UCs in Address Book <br> • Integrated Collections, Generics, Exception Handling, and File Operations <br> • Brought the project closer to completion |
+
+---
+
+## 📝 Week 7 – Key Learnings
+
+- Gained hands-on experience with **Annotations and Reflection**, understanding how frameworks use metadata at runtime.
+- Learned the importance of **static code analysis tools** like SonarQube in maintaining clean and maintainable code.
+- Developed strong practical knowledge of **CSV data handling**, including file I/O, parsing, and exception handling.
+- Understood real-world usage of **Exception Handling** through scenario-based systems like Airline Management and Banking.
+- Built confidence in **unit testing using MSTest**, especially for validation and exception scenarios.
+- Learned **JSON data handling** including reading, writing, and parsing structured data.
+- Applied **Regex** in real-world text-processing scenarios (LexicalTwit).
+- Improved ability to **revise, refactor, and extend existing projects** like the Address Book using learned concepts.
+- Realized that completing projects involves continuous iteration, testing, and refinement.
+
+---
+
+## 🎯 Week 7 – Skill Progress
+
+| Skill | Status |
+|-----|-------|
+| Annotations (Attributes) | 🟢 Strong |
+| Reflection API | 🟡 Improving |
+| CSV Data Handling | 🟢 Strong |
+| JSON Processing | 🟢 Strong |
+| Exception Handling (Advanced) | 🟢 Strong |
+| MSTest Framework | 🟢 Strong |
+| Regex (Applied Scenarios) | 🟢 Strong |
+| SonarQube & Static Analysis | 🟡 Learning |
+| Project Refactoring | 🟢 Strong |
+| Address Book Architecture | 🟢 Strong |
+| Industry-Level Coding Practices | 🟡 Improving |
 
 ---
 
