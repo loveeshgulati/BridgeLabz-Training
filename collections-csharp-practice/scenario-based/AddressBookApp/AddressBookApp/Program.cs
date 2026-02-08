@@ -64,6 +64,12 @@ namespace AddressBookApp
                             SortContactsByName(service);
                             break;
                         case 13:
+                            service.WriteToFile();
+                            break;
+                        case 14:
+                            service.ReadFromFile();
+                            break;
+                        case 15:
                             Console.WriteLine("Exiting application...");
                             return;
                         default:
@@ -97,7 +103,9 @@ namespace AddressBookApp
             Console.WriteLine("10. Count by City");
             Console.WriteLine("11. Count by State");
             Console.WriteLine("12. Sort Contacts by Name");
-            Console.WriteLine("13. Exit");
+            Console.WriteLine("13. Save to File");
+            Console.WriteLine("14. Load from File");
+            Console.WriteLine("15. Exit");
             Console.WriteLine("====================================");
         }
 

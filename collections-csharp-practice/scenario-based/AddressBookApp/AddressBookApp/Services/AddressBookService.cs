@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿
 using AddressBookApp.Models;
 using AddressBookApp.Exceptions;
 
@@ -203,5 +201,91 @@ namespace AddressBookApp.Services
             foreach (var contact in contacts)
                 contact.Display();
         }
+    
+    private string filePath = "AddressBookData.txt";
+
+// UC 13: Write Address Book Data to File
+public void WriteToFile()
+{
+    try
+    {
+        using (StreamWriter sw = new StreamWriter(filePath))
+        {
+            foreach (var book in addressBooks.Values)
+            {
+                sw.WriteLine($"--- Address Book: {book.AddressBookName} ---");
+                foreach (var contact in book.Contacts)
+                {
+                    // Writing contact data in a comma-separated format for easy parsing
+                    sw.WriteLine($"{contact.Id},{contact.FirstName},{contact.LastName},{contact.Address},{contact.City},{contact.State},{contact.Zip},{contact.PhoneNumber},{contact.Email}");
+                }
+            }
+        }
+        Console.WriteLine("Data successfully saved to file.");
+    }
+    catch (IOException ex)
+    {
+        Console.WriteLine($"An error occurred while writing to the file: {ex.Message}");
+    }
+}
+
+// UC 13: Read Address Book Data from File
+public void ReadFromFile()
+{
+    if (!File.Exists(filePath))
+    {
+        Console.WriteLine("No existing data file found.");
+        return;
+    }
+
+    try
+    {
+        string[] lines = File.ReadAllLines(filePath);
+        string currentBookName = "";
+
+        foreach (string line in lines)
+        {
+            if (line.StartsWith("--- Address Book:"))
+            {
+                // Extracting book name
+                currentBookName = line.Replace("--- Address Book: ", "").Replace(" ---", "").Trim();
+                
+                // Create book if it doesn't exist in memory yet
+                if (!addressBooks.ContainsKey(currentBookName))
+                {
+                    addressBooks[currentBookName] = new AddressBookModel<int>(currentBookName);
+                }
+            }
+            else if (!string.IsNullOrWhiteSpace(line))
+            {
+                string[] data = line.Split(',');
+                if (data.Length == 9)
+                {
+                    int id = int.Parse(data[0]);
+                    var book = addressBooks[currentBookName];
+
+                    // OPTION 2 LOGIC: Only add if the ID is not already present
+                    if (!book.Contacts.Any(c => c.Id == id))
+                    {
+                        var contact = new Contact<int>(
+                            id, data[1], data[2], data[3], 
+                            data[4], data[5], data[6], data[7], data[8]
+                        );
+                        book.Contacts.Add(contact);
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Skipping duplicate Contact ID: {id} in '{currentBookName}'.");
+                    }
+                }
+            }
+        }
+        Console.WriteLine("Data synchronization from file complete.");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"An error occurred while reading the file: {ex.Message}");
+    }
+}
     }
 }
