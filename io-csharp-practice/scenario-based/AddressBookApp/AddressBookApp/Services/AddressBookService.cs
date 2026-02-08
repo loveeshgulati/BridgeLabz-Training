@@ -287,5 +287,81 @@ public void ReadFromFile()
         Console.WriteLine($"An error occurred while reading the file: {ex.Message}");
     }
 }
+private string csvPath = "AddressBook.csv";
+
+// UC 14: Write to CSV
+public void WriteToCsv()
+{
+    try
+    {
+        using (StreamWriter sw = new StreamWriter(csvPath))
+        {
+            // Header row
+            sw.WriteLine("AddressBook,Id,FirstName,LastName,Address,City,State,Zip,Phone,Email");
+
+            foreach (var book in addressBooks.Values)
+            {
+                foreach (var contact in book.Contacts)
+                {
+                    // Encapsulating fields in quotes to handle commas within data
+                    sw.WriteLine($"\"{book.AddressBookName}\",\"{contact.Id}\",\"{contact.FirstName}\",\"{contact.LastName}\",\"{contact.Address}\",\"{contact.City}\",\"{contact.State}\",\"{contact.Zip}\",\"{contact.PhoneNumber}\",\"{contact.Email}\"");
+                }
+            }
+        }
+        Console.WriteLine($"Successfully exported to {csvPath}");
+    }
+    catch (IOException ex)
+    {
+        Console.WriteLine($"Error writing CSV: {ex.Message}");
+    }
+}
+
+// UC 14: Read from CSV
+public void ReadFromCsv()
+{
+    if (!File.Exists(csvPath))
+    {
+        Console.WriteLine("CSV file not found.");
+        return;
+    }
+
+    try
+    {
+        string[] lines = File.ReadAllLines(csvPath);
+        // Skip header (i=1)
+        for (int i = 1; i < lines.Length; i++)
+        {
+            // Simple split (assumes no commas inside the actual data fields)
+            // For complex data, use a Regex or CsvHelper library
+            string[] values = lines[i].Split(new[] { "\",\"" }, StringSplitOptions.None);
+            
+            // Cleanup quotes from split results
+            for (int j = 0; j < values.Length; j++) 
+                values[j] = values[j].Trim('\"');
+
+            if (values.Length == 10)
+            {
+                string bookName = values[0];
+                if (!addressBooks.ContainsKey(bookName)) 
+                    CreateAddressBook(bookName);
+
+                int id = int.Parse(values[1]);
+                var book = addressBooks[bookName];
+
+                if (!book.Contacts.Any(c => c.Id == id))
+                {
+                    var contact = new Contact<int>(id, values[2], values[3], values[4], values[5], values[6], values[7], values[8], values[9]);
+                    book.Contacts.Add(contact);
+                }
+            }
+        }
+        Console.WriteLine("CSV data imported successfully.");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error reading CSV: {ex.Message}");
+    }
+}
+
     }
 }

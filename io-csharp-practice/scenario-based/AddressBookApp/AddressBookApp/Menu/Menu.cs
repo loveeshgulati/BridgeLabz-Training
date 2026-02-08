@@ -37,10 +37,10 @@ public class Menu
                         case 11: _service.CountByState(); break;
                         case 12: SortContactsByName(); break;
                         case 13: _service.WriteToFile(); break;
-                        case 14: _service.ReadFromFile(); break;
-                        case 15:
-                            Console.WriteLine("Exiting application...");
-                            return;
+                        case 14: _service.WriteToCsv(); break;
+                        case 15:_service.ReadFromCsv(); break;
+                        case 16:_service.ReadFromFile(); break;
+                        case 17: return;
                         default:
                             Console.WriteLine("Invalid choice.");
                             break;
@@ -65,13 +65,13 @@ public class Menu
             Console.WriteLine("3. Edit Contact           10. Count by City");
             Console.WriteLine("4. Delete Contact         11. Count by State");
             Console.WriteLine("5. Display Contacts       12. Sort Contacts by Name");
-            Console.WriteLine("6. Search by City         13. Save to File");
-            Console.WriteLine("7. Search by State        14. Load from File");
-            Console.WriteLine("15. Exit");
+            Console.WriteLine("6. Search by City         13. Save to File (TXT)");
+            Console.WriteLine("7. Search by State        14. Save to CSV ");
+            Console.WriteLine("15. Load from CSV         16. Load From File");
+            Console.WriteLine("17. Exit");
             Console.WriteLine("====================================");
         }
 
-        // Helper methods moved from Program.cs
         private void CreateAddressBook()
         {
             Console.Write("Enter Address Book Name: ");
@@ -172,4 +172,5 @@ public class Menu
 
     return new Contact<int>(id, firstName, lastName, address, city, state, zip, phone, email);
 }
+
     }
