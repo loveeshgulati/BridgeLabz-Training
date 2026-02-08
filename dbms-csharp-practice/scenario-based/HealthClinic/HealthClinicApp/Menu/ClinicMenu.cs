@@ -1,6 +1,13 @@
+ using Microsoft.Data.SqlClient;
  public class ClinicMenu
     {
-        private readonly IPatientService service = new PatientUtility();
+        private readonly IPatientService patientService;
+        private readonly IDoctorService doctorService;
+        public ClinicMenu()
+        {
+            patientService = new PatientUtility();
+            doctorService = new DoctorUtility();
+        }
 
         public void ShowMenu()
         {
@@ -11,6 +18,10 @@
                 Console.WriteLine("2. Update Patient");
                 Console.WriteLine("3. Search Patient");
                 Console.WriteLine("4. View Patient Visit History");
+                Console.WriteLine("5. Add Doctor Profile");
+                Console.WriteLine("6. Assign/Update Doctor Specialty (Admin)");
+                Console.WriteLine("7. View Doctor by Speciality");
+                Console.WriteLine("8. Deactivate Doctor");
                 Console.WriteLine("0. Exit");
                 Console.Write("Choose option: ");
 
@@ -26,9 +37,20 @@
                         SearchPatient();
                         break;
                     case "4":
-                    ViewPatientHistory();
-                    break;
-
+                        ViewPatientHistory();
+                        break;
+                    case "5":
+                        AddDoctorProfile();
+                        break;
+                    case "6":
+                        doctorService.AssignOrUpdateDoctorSpecialty(); 
+                        break;
+                    case "7":
+                         ViewDoctorsBySpecialty();
+                         break;
+                         case "8":
+                         DeactivateDoctor();
+                         break;
                     case "0":
                         return;
                     default:
@@ -39,30 +61,45 @@
         }
 
         private void RegisterPatient()
-        {
-            Patient p = new Patient();
+{
+    try 
+    {
+        Patient p = new Patient();
 
-            Console.Write("Name: ");
-            p.Name = Console.ReadLine();
+        Console.Write("Name: ");
+        p.Name = Console.ReadLine();
 
-            Console.Write("DOB (yyyy-mm-dd): ");
-            p.DateOfBirth = DateTime.Parse(Console.ReadLine());
+        Console.Write("DOB (yyyy-mm-dd): ");
+        p.DateOfBirth = DateTime.Parse(Console.ReadLine());
 
-            Console.Write("Contact Number: ");
-            p.ContactNumber = Console.ReadLine();
+        Console.Write("Contact Number: ");
+        p.ContactNumber = Console.ReadLine();
 
-            Console.Write("Email: ");
-            p.Email = Console.ReadLine();
+        Console.Write("Email: ");
+        p.Email = Console.ReadLine();
 
-            Console.Write("Address: ");
-            p.Address = Console.ReadLine();
+        Console.Write("Address: ");
+        p.Address = Console.ReadLine();
 
-            Console.Write("Blood Group: ");
-            p.BloodGroup = Console.ReadLine();
+        Console.Write("Blood Group: ");
+        p.BloodGroup = Console.ReadLine();
 
-            service.RegisterPatient(p);
-            Console.WriteLine("Patient registered successfully.");
-        }
+        patientService.RegisterPatient(p);
+        Console.WriteLine("Patient registered successfully.");
+    }
+    catch (PatientAlreadyExistsException ex)
+    {
+        Console.WriteLine($"Registration Error: {ex.Message}");
+    }
+    catch (FormatException)
+    {
+        Console.WriteLine("Error: Invalid date format. Please use yyyy-mm-dd.");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+    }
+}
 
         private void UpdatePatient()
         {
@@ -89,7 +126,7 @@
             Console.Write("New Blood Group: ");
             p.BloodGroup = Console.ReadLine();
 
-            service.UpdatePatient(id, p);
+            patientService.UpdatePatient(id, p);
             Console.WriteLine("Patient updated successfully.");
         }
 
@@ -108,7 +145,7 @@
             phone = string.IsNullOrEmpty(phone) ? null : phone;
             name = string.IsNullOrEmpty(name) ? null : name;
 
-            List<Patient> results = service.SearchPatients(id, phone, name);
+            List<Patient> results = patientService.SearchPatients(id, phone, name);
 
             if (results.Count == 0)
             {
@@ -125,7 +162,7 @@
         {
             Console.Write("Enter Patient ID: ");
             int patientId = int.Parse(Console.ReadLine());
-            var visits = service.GetPatientVisitHistory(patientId);
+            var visits = patientService.GetPatientVisitHistory(patientId);
 
         if (visits.Count == 0)
         {
@@ -139,5 +176,88 @@
         Console.WriteLine($"Date: {v.VisitDate:d} | Doctor: {v.DoctorName} | Diagnosis: {v.Diagnosis}");
         }
     }
+   private void AddDoctorProfile()
+{
+    try
+    {
+        // Display available specialties first
+        using (SqlConnection con = ConnectionDB.GetConnection())
+        {
+            con.Open();
+            Console.WriteLine("\n--- Available Specialties ---");
+            string fetch = "SELECT SpecialtyId, SpecialtyName FROM Specialties";
+            using SqlCommand cmd = new SqlCommand(fetch, con);
+            using SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Console.WriteLine($"{reader["SpecialtyId"]} - {reader["SpecialtyName"]}");
+            }
+        }
+
+        Console.Write("\nDoctor Name: ");
+        string name = Console.ReadLine();
+
+        Console.Write("Enter Specialty ID from the list above: ");
+        int specialtyId = int.Parse(Console.ReadLine());
+
+        Console.Write("Contact Number: ");
+        string contact = Console.ReadLine();
+
+        Console.Write("Consultation Fee: ");
+        decimal fee = decimal.Parse(Console.ReadLine());
+
+        Doctor doctor = new Doctor
+        {
+            Name = name,
+            SpecialtyId = specialtyId,
+            Contact = contact,
+            ConsultationFee = fee
+        };
+
+        doctorService.AddDoctor(doctor);
+        Console.WriteLine("Doctor profile added successfully.");
+    }
+    catch (DoctorException ex)
+    {
+        Console.WriteLine($"Clinic Error: {ex.Message}");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Unexpected Error: {ex.Message}");
+    }
+}
+    private void ViewDoctorsBySpecialty()
+{
+    Console.Write("Enter Specialty Name (e.g., Cardiology): ");
+    string specialty = Console.ReadLine();
+    
+    if (string.IsNullOrWhiteSpace(specialty))
+    {
+        Console.WriteLine("Specialty name cannot be empty.");
+        return;
+    }
+
+    doctorService.ViewDoctorsBySpecialty(specialty);
+}
+ private void DeactivateDoctor()
+{
+    try
+    {
+        Console.Write("Enter Doctor ID to deactivate: ");
+        int id = int.Parse(Console.ReadLine());
+
+        doctorService.DeactivateDoctor(id);
+        Console.WriteLine("Doctor profile deactivated successfully.");
+    }
+    catch (DoctorException ex)
+    {
+        Console.WriteLine($"Error: {ex.Message}");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Unexpected Error: {ex.Message}");
+    }
+}
+
 
     }
