@@ -298,6 +298,38 @@ The training log is maintained **week-wise** for clarity and structured tracking
 | 05/02/2026 | Mentorship & Database-Driven Application | • Weekly mentor meeting <br> • MS SQL Server connectivity <br> • Database integration in applications <br> • SQL JOIN queries (INNER, LEFT, RIGHT) <br> • Updating use cases (UCs) | • Discussed progress and improvement areas with mentor <br> • Started working on **HealthClinic Application** using MS SQL Server connection <br> • Updated application UCs with database integration <br> • Implemented and practiced SQL JOIN queries in real scenarios |
 | 06/02/2026 | Power Skills & Advanced SQL | • Power skills session with BridgeLabz <br> • Stored Procedures <br> • SQL query optimization basics <br> • Updating application UCs | • Attended Power Skills session for professional development <br> • Continued updating **HealthClinic Application** UCs <br> • Continued updating **Address Book** UCs <br> • Implemented **Stored Procedures** in MS SQL Server <br> • Practiced writing and executing stored procedure-based queries |
 
+## 📝 Week 8 – Key Learnings (2–6 February 2026)
+
+- Understood and applied core **Software Design Principles** (KISS, DRY, DIY) to write cleaner and more maintainable code.
+- Strengthened practical understanding of **Regex** through scenario-based implementation (*FlipKey*).
+- Gained foundational knowledge of **Multithreading**, including thread execution and concurrent problem solving.
+- Revised and reinforced previously learned concepts:
+  - Regex
+  - MSTest
+  - Annotations & Reflection
+- Successfully began **Database Integration** in real applications using MS SQL Server.
+- Learned how to connect C# applications with MSSQL using proper database connectivity.
+- Developed clarity on **SQL JOIN queries** and their importance in relational data retrieval.
+- Implemented and understood **Stored Procedures** for better security, modularity, and performance.
+- Continued iterative development of **HealthClinic** and **Address Book** applications using database-backed logic.
+- Improved awareness of professional development through the **Power Skills session**. 
+
+---
+
+## 🎯 Week 8 – Skill Progress
+
+| Skill | Status |
+|------|--------|
+| Design Principles (KISS, DRY, DIY) | 🟢 Strong |
+| Regex (Advanced Usage) | 🟢 Strong |
+| Multithreading Basics | 🟡 Improving |
+| MSTest & Reflection Revision | 🟢 Strong |
+| MS SQL Server Setup | 🟢 Strong |
+| SQL JOIN Queries | 🟢 Strong |
+| Stored Procedures | 🟡 Improving |
+| Database Integration (C# + MSSQL) | 🟢 Strong |
+| Professional & Communication Skills | 🟢 Strong |
+
 
 ## 🛠️ Tools & Technologies
 
