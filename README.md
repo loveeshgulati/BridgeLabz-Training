@@ -377,6 +377,51 @@ The training log is maintained **week-wise** for clarity and structured tracking
 | Concept Retention & Revision | 🟢 Strong |
 | Professional Communication Skills | 🟡 Improving |
 
+# 📅 Week 10 – Learning Log (16–21 February 2026)
+
+| Date | Focus Area | Topics Covered | Hands-on / Outcome |
+|-----|-----------|---------------|-------------------|
+| 16/02/2026 | Scenario-Based System & Testing | • Banking transaction concepts <br> • Exception handling scenarios <br> • MSTest framework practice | • Implemented **Bank Transaction Processing System** (scenario-based problem) <br> • Practiced writing MSTest unit test cases |
+| 17/02/2026 | ASP.NET Core Basics | • ASP.NET Core introduction <br> • Project structure <br> • File-based implementation | • Learned ASP.NET Core fundamentals <br> • Implemented basic ASP.NET project file structure |
+| 18/02/2026 | Mock Assessment & Project Initialization | • Capgemini M1 Mock assessment <br> • Project documentation practices | • Attempted **Capgemini M1 Mock** <br> • Started **Quantity Measurement App** implementation (UC1) <br> • Created initial project documentation |
+| 19/02/2026 | Mentorship & Project Progress | • Mentor discussion <br> • Incremental UC implementation | • Attended Capgemini mentor meeting <br> • Progressed further with **QuantityMeasurementApp** use cases |
+| 20/02/2026 | ASP.NET Practice & Problem Solving | • ASP.NET structure implementation <br> • Dictionary problem solving <br> • Regex practice <br> • Professional communication | • Implemented ASP.NET concepts within project structure <br> • Solved Dictionary-based coding problems with Regex <br> • Attended Power Skills session <br> • Applied session learnings through class presentation |
+| 21/02/2026 | Quantity Measurement App – UC3 | • Equality comparison concepts <br> • Test-driven development basics <br> • Unit testing | • Implemented **Quantity Measurement App – UC3** <br> • Created unit test cases <br> • Implemented equality checking logic for measurements |
+
+---
+
+## 📝 Week 10 – Key Learnings
+
+- Strengthened ability to design **scenario-based backend systems** using testing-driven approaches.
+- Improved understanding of **MSTest** and its role in validating business logic.
+- Learned fundamentals of **ASP.NET Core** and understood project structure organization.
+- Experienced real assessment exposure through the **Capgemini M1 Mock**.
+- Understood importance of **documentation** during project development.
+- Progressed significantly in building the **Quantity Measurement Application** using incremental UCs.
+- Applied **Test-Driven Development (TDD)** concepts while implementing equality checks.
+- Enhanced logical thinking through Dictionary and Regex-based problem solving.
+- Improved confidence in presenting technical concepts through Power Skills activities.
+- Learned structured development workflow:
+  - Requirement → UC Implementation → Testing → Documentation
+
+---
+
+## 🎯 Week 10 – Skill Progress
+
+| Skill | Status |
+|------|--------|
+| Scenario-Based Problem Solving | 🟢 Strong |
+| MSTest & Unit Testing | 🟢 Strong |
+| ASP.NET Core Fundamentals | 🟡 Improving |
+| Project Documentation | 🟢 Strong |
+| Quantity Measurement Design | 🟢 Strong |
+| Equality & Generic Concepts | 🟢 Strong |
+| Dictionary & Regex Problem Solving | 🟢 Strong |
+| Test-Driven Development | 🟡 Improving |
+| Backend Application Structuring | 🟢 Strong |
+| Technical Presentation Skills | 🟢 Strong |
+| Industry Mock Readiness | 🟡 Improving |
+
 
 ## 🛠️ Tools & Technologies
 
