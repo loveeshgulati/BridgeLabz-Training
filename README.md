@@ -422,12 +422,21 @@ The training log is maintained **week-wise** for clarity and structured tracking
 | Technical Presentation Skills | 🟢 Strong |
 | Industry Mock Readiness | 🟡 Improving |
 
+# 📅 Week 11 – Learning Log (23–27 February 2026)
+
+| Date | Focus Area | Topics Covered | Hands-on / Outcome |
+|-----|-----------|---------------|-------------------|
+| 23/02/2026 | Quantity Measurement App – UC Progress | • Quantity Measurement concepts <br> • Equality comparison <br> • Unit testing revision <br> • Previous concept revision | • Implemented **Quantity Measurement App – UC4, UC5, UC6** <br> • Extended measurement comparison logic <br> • Revised previously learned concepts for better implementation clarity |
+| 24/02/2026 | — | — | — |
+| 25/02/2026 | — | — | — |
+| 26/02/2026 | — | — | — |
+| 27/02/2026 | — | — | — |
 
 ## 🛠️ Tools & Technologies
 
 | Category | Tools |
 |-------|------|
-| Languages | Java, C# |
+| Languages | C# |
 | Framework | .NET |
 | Version Control | Git, GitHub |
 | IDEs | Visual Studio, VS Code |
