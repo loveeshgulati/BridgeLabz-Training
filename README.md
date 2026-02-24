@@ -330,6 +330,53 @@ The training log is maintained **week-wise** for clarity and structured tracking
 | Database Integration (C# + MSSQL) | 🟢 Strong |
 | Professional & Communication Skills | 🟢 Strong |
 
+# 📅 Week 9 – Learning Log (9–14 February 2026)
+
+| Date | Focus Area | Topics Covered | Hands-on / Outcome |
+|-----|-----------|---------------|-------------------|
+| 09/02/2026 | SQL Triggers & Application Integration | • SQL Triggers <br> • Database event handling <br> • Application–Database integration concepts | • Implemented SQL Triggers <br> • Completed **HealthClinic Application** <br> • Learned practical system integration through full implementation |
+| 10/02/2026 | Mock Preparation (M1) | • Problem solving <br> • Logical implementation <br> • Coding practice | • Solved 3 coding problems for **BridgeLabz M1 Mock** assessment |
+| 11/02/2026 | Database Connectivity via VS Code | • SQL Connection using C# <br> • SQL Command execution <br> • Insert & Retrieve operations | • Provided project review to mentor <br> • Implemented inserting and fetching data using SQL Connection and Command in VS Code |
+| 12/02/2026 | Regex Practice & Scenario Design | • Regex revision <br> • Pattern validation concepts | • Solved multiple Regex problems <br> • Implemented **NotifyHub** – scenario-based validation system |
+| 13/02/2026 | Power Skills & Validation Systems | • Professional communication concepts <br> • Applied learning from Power Skills session | • Attended BridgeLabz Power Skills session <br> • Implemented **Email Validator** scenario-based application |
+| 14/02/2026 | Concept Revision | • Revision of previous weeks’ concepts <br> • DSA, Testing, Regex, SQL, File Handling | • Revised all previously learned technical concepts for stronger retention and interview readiness |
+
+---
+
+## 📝 Week 9 – Key Learnings
+
+- Learned how **SQL Triggers** automate database actions based on events such as insert, update, and delete.
+- Successfully experienced **end-to-end application integration**, completing the HealthClinic project with database connectivity.
+- Strengthened understanding of executing SQL operations directly from **C# using SQL Connection and Command**.
+- Improved confidence in solving **assessment-level coding problems** during mock preparation.
+- Reinforced expertise in **Regex-based validation systems** through multiple real-world scenarios.
+- Understood importance of **mentor reviews and feedback** in improving project quality.
+- Applied learnings from **Power Skills sessions** to improve implementation clarity and communication approach.
+- Improved retention and conceptual clarity through structured revision of previously learned topics.
+- Developed better understanding of how backend systems combine:
+  - Application logic  
+  - Database operations  
+  - Validation mechanisms  
+  - Testing practices  
+
+---
+
+## 🎯 Week 9 – Skill Progress
+
+| Skill | Status |
+|------|--------|
+| SQL Triggers | 🟢 Strong |
+| Database Integration (C# + SQL) | 🟢 Strong |
+| SQL Commands & Data Retrieval | 🟢 Strong |
+| Regex Validation Systems | 🟢 Strong |
+| Scenario-Based Problem Solving | 🟢 Strong |
+| Mock Assessment Readiness | 🟡 Improving |
+| Backend Application Development | 🟢 Strong |
+| System Integration Understanding | 🟢 Strong |
+| Code Review & Improvement | 🟢 Strong |
+| Concept Retention & Revision | 🟢 Strong |
+| Professional Communication Skills | 🟡 Improving |
+
 
 ## 🛠️ Tools & Technologies
 
