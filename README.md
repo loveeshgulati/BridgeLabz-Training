@@ -426,11 +426,38 @@ The training log is maintained **week-wise** for clarity and structured tracking
 
 | Date | Focus Area | Topics Covered | Hands-on / Outcome |
 |-----|-----------|---------------|-------------------|
-| 23/02/2026 | Quantity Measurement App – UC Progress | • Quantity Measurement concepts <br> • Equality comparison <br> • Unit testing revision <br> • Previous concept revision | • Implemented **Quantity Measurement App – UC4, UC5, UC6** <br> • Extended measurement comparison logic <br> • Revised previously learned concepts for better implementation clarity |
-| 24/02/2026 | — | — | — |
-| 25/02/2026 | — | — | — |
-| 26/02/2026 | — | — | — |
-| 27/02/2026 | — | — | — |
+| 23/02/2026 | Quantity Measurement App – UC Progress | • Quantity Measurement concepts <br> • Equality comparison <br> • Unit testing revision <br> • Previous concept revision | • Implemented **QuantityMeasurementApp – UC4, UC5, UC6** <br> • Extended measurement comparison logic <br> • Revised previously learned concepts for better implementation clarity |
+| 24/02/2026 | M1 Exam Preparation | • Revision of core programming concepts <br> • Testing concepts <br> • DSA and application logic revision | • Revised previously learned concepts in preparation for the **M1 Examination** |
+| 25/02/2026 | M1 Assessment & Mentor Review | • Assessment evaluation <br> • Code review discussion | • Attempted the **M1 Examination** <br> • Had a review discussion with the **Capgemini mentor** |
+| 26/02/2026 | Mentor Interaction & Quiz | • Concept validation quiz <br> • Technical discussion with mentor | • Completed the **quiz assigned by mentor** <br> • Interacted with the **Capgemini mentor** to discuss concepts and improvements |
+| 27/02/2026 | ASP.NET Core Learning | • ASP.NET Core documentation <br> • Framework structure and architecture | • Studied **ASP.NET Core documentation** to understand framework structure and development flow |
+
+## 📝 Week 11 – Key Learnings
+
+- Strengthened understanding of **Quantity Measurement Application design** through implementation of UC4, UC5, and UC6.
+- Improved clarity on **measurement comparison logic and equality validation** within unit testing scenarios.
+- Reinforced previously learned programming concepts through structured **revision for the M1 examination**.
+- Gained valuable insights from **mentor review sessions**, helping identify areas for improvement in problem solving and code quality.
+- Practiced analytical thinking through the **mentor-provided technical quiz**.
+- Understood the importance of **continuous feedback and mentor interaction** in improving technical depth.
+- Began exploring **ASP.NET Core documentation**, gaining foundational understanding of framework architecture and development structure.
+- Improved ability to balance **project development, revision, and assessment preparation** simultaneously.
+
+---
+
+## 🎯 Week 11 – Skill Progress
+
+| Skill | Status |
+|------|--------|
+| Quantity Measurement Application Design | 🟢 Strong |
+| Unit Testing & Equality Logic | 🟢 Strong |
+| Concept Revision & Retention | 🟢 Strong |
+| Problem Solving for Assessments | 🟡 Improving |
+| Technical Discussion with Mentors | 🟢 Strong |
+| Analytical Thinking (Quiz Practice) | 🟡 Improving |
+| ASP.NET Core Fundamentals | 🟡 Learning |
+| Backend Application Development | 🟢 Strong |
+| Professional Review & Feedback Handling | 🟢 Strong |
 
 ## 🛠️ Tools & Technologies
 
