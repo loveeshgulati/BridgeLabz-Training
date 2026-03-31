@@ -377,7 +377,7 @@ The training log is maintained **week-wise** for clarity and structured tracking
 | Concept Retention & Revision | 🟢 Strong |
 | Professional Communication Skills | 🟡 Improving |
 
-# 📅 Week 10 – Learning Log (16–21 February 2026)
+# 📅 Week 10 – Learning Log (16–20 February 2026)
 
 | Date | Focus Area | Topics Covered | Hands-on / Outcome |
 |-----|-----------|---------------|-------------------|
@@ -386,7 +386,6 @@ The training log is maintained **week-wise** for clarity and structured tracking
 | 18/02/2026 | Mock Assessment & Project Initialization | • Capgemini M1 Mock assessment <br> • Project documentation practices | • Attempted **Capgemini M1 Mock** <br> • Started **Quantity Measurement App** implementation (UC1) <br> • Created initial project documentation |
 | 19/02/2026 | Mentorship & Project Progress | • Mentor discussion <br> • Incremental UC implementation | • Attended Capgemini mentor meeting <br> • Progressed further with **QuantityMeasurementApp** use cases |
 | 20/02/2026 | ASP.NET Practice & Problem Solving | • ASP.NET structure implementation <br> • Dictionary problem solving <br> • Regex practice <br> • Professional communication | • Implemented ASP.NET concepts within project structure <br> • Solved Dictionary-based coding problems with Regex <br> • Attended Power Skills session <br> • Applied session learnings through class presentation |
-| 21/02/2026 | Quantity Measurement App – UC3 | • Equality comparison concepts <br> • Test-driven development basics <br> • Unit testing | • Implemented **Quantity Measurement App – UC3** <br> • Created unit test cases <br> • Implemented equality checking logic for measurements |
 
 ---
 
@@ -397,8 +396,6 @@ The training log is maintained **week-wise** for clarity and structured tracking
 - Learned fundamentals of **ASP.NET Core** and understood project structure organization.
 - Experienced real assessment exposure through the **Capgemini M1 Mock**.
 - Understood importance of **documentation** during project development.
-- Progressed significantly in building the **Quantity Measurement Application** using incremental UCs.
-- Applied **Test-Driven Development (TDD)** concepts while implementing equality checks.
 - Enhanced logical thinking through Dictionary and Regex-based problem solving.
 - Improved confidence in presenting technical concepts through Power Skills activities.
 - Learned structured development workflow:
@@ -414,7 +411,6 @@ The training log is maintained **week-wise** for clarity and structured tracking
 | MSTest & Unit Testing | 🟢 Strong |
 | ASP.NET Core Fundamentals | 🟡 Improving |
 | Project Documentation | 🟢 Strong |
-| Quantity Measurement Design | 🟢 Strong |
 | Equality & Generic Concepts | 🟢 Strong |
 | Dictionary & Regex Problem Solving | 🟢 Strong |
 | Test-Driven Development | 🟡 Improving |
@@ -426,7 +422,6 @@ The training log is maintained **week-wise** for clarity and structured tracking
 
 | Date | Focus Area | Topics Covered | Hands-on / Outcome |
 |-----|-----------|---------------|-------------------|
-| 23/02/2026 | Quantity Measurement App – UC Progress | • Quantity Measurement concepts <br> • Equality comparison <br> • Unit testing revision <br> • Previous concept revision | • Implemented **QuantityMeasurementApp – UC4, UC5, UC6** <br> • Extended measurement comparison logic <br> • Revised previously learned concepts for better implementation clarity |
 | 24/02/2026 | M1 Exam Preparation | • Revision of core programming concepts <br> • Testing concepts <br> • DSA and application logic revision | • Revised previously learned concepts in preparation for the **M1 Examination** |
 | 25/02/2026 | M1 Assessment & Mentor Review | • Assessment evaluation <br> • Code review discussion | • Attempted the **M1 Examination** <br> • Had a review discussion with the **Capgemini mentor** |
 | 26/02/2026 | Mentor Interaction & Quiz | • Concept validation quiz <br> • Technical discussion with mentor | • Completed the **quiz assigned by mentor** <br> • Interacted with the **Capgemini mentor** to discuss concepts and improvements |
@@ -434,8 +429,6 @@ The training log is maintained **week-wise** for clarity and structured tracking
 
 ## 📝 Week 11 – Key Learnings
 
-- Strengthened understanding of **Quantity Measurement Application design** through implementation of UC4, UC5, and UC6.
-- Improved clarity on **measurement comparison logic and equality validation** within unit testing scenarios.
 - Reinforced previously learned programming concepts through structured **revision for the M1 examination**.
 - Gained valuable insights from **mentor review sessions**, helping identify areas for improvement in problem solving and code quality.
 - Practiced analytical thinking through the **mentor-provided technical quiz**.
@@ -449,8 +442,6 @@ The training log is maintained **week-wise** for clarity and structured tracking
 
 | Skill | Status |
 |------|--------|
-| Quantity Measurement Application Design | 🟢 Strong |
-| Unit Testing & Equality Logic | 🟢 Strong |
 | Concept Revision & Retention | 🟢 Strong |
 | Problem Solving for Assessments | 🟡 Improving |
 | Technical Discussion with Mentors | 🟢 Strong |
@@ -458,6 +449,8 @@ The training log is maintained **week-wise** for clarity and structured tracking
 | ASP.NET Core Fundamentals | 🟡 Learning |
 | Backend Application Development | 🟢 Strong |
 | Professional Review & Feedback Handling | 🟢 Strong |
+
+
 
 ## 🛠️ Tools & Technologies
 
